@@ -7,22 +7,41 @@ import {
   Scale, Shield, Briefcase, Menu, 
   ArrowUpRight, ArrowDownRight, Target, Bell,
   FileText, Ruler, Hash, Calendar, ExternalLink, Gauge, Loader2,
-  Brain, Sliders, Battery, AlertOctagon, Info
+  Brain, Sliders, Battery, AlertOctagon, Info, Users, BarChart3
 } from 'lucide-react';
 import { 
   ResponsiveContainer, AreaChart, Area, Tooltip, XAxis, YAxis, CartesianGrid,
-  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis
+  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
+  ComposedChart, Line, Bar, Legend, ReferenceLine, Cell
 } from 'recharts';
 
-// --- 1. NEW COMPONENT: AI SESSION PREDICTOR ---
+// --- MOCK DATA DEFINITIONS (FALLBACKS) ---
+const MOCK_PLAYERS = [
+    { player_id: 1, name: 'Tischler, N.', jersey_number: 13, position: 'Forward', photo_url: '', height_m: 2.01, weight_kg: 98, age: 23 },
+    { player_id: 2, name: 'Kramer, D.', jersey_number: 44, position: 'Guard', photo_url: '', height_m: 1.90, weight_kg: 85, age: 26 },
+    { player_id: 3, name: 'Bango, J.', jersey_number: 21, position: 'Center', photo_url: '', height_m: 2.08, weight_kg: 105, age: 24 }
+];
+
+const MOCK_TEAM_ANALYSIS = {
+    team_avg_load: 412,
+    roster: [
+      { name: 'Tischler, N.', position: 'Forward', acute_load: 580, acwr: 1.6, status: 'High Risk (Spike)', flag: 'red', sessions_last_28: 22 },
+      { name: 'Kramer, D.', position: 'Guard', acute_load: 405, acwr: 1.1, status: 'Optimal', flag: 'green', sessions_last_28: 20 },
+      { name: 'Bango, J.', position: 'Center', acute_load: 310, acwr: 0.75, status: 'Detraining', flag: 'yellow', sessions_last_28: 15 },
+      { name: 'Amaize, R.', position: 'Guard', acute_load: 425, acwr: 1.2, status: 'Optimal', flag: 'green', sessions_last_28: 21 },
+      { name: 'Sengfelder, C.', position: 'Forward', acute_load: 390, acwr: 1.0, status: 'Optimal', flag: 'green', sessions_last_28: 19 },
+    ]
+};
+
+// --- 1. NEW COMPONENT: AI SESSION PREDICTOR (UPDATED FOR WEIGHTED RISK) ---
 
 const SessionPredictor = ({ player, apiBase }) => {
   const [inputs, setInputs] = useState({
     duration: 90, // minutes
     rpe: 7,       // 1-10
-    distance: 4000 // meters
+    distance: 4000 // meters (visual only)
   });
-  
+   
   const [hoverRpe, setHoverRpe] = useState(null);
   const [isCalculating, setIsCalculating] = useState(false);
   const [prediction, setPrediction] = useState(null);
@@ -37,6 +56,7 @@ const SessionPredictor = ({ player, apiBase }) => {
 
   // Real API Call to Backend
   const handlePredict = async () => {
+    if (!player) return;
     setIsCalculating(true);
     setError(null);
     
@@ -47,8 +67,9 @@ const SessionPredictor = ({ player, apiBase }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          player_id: player?.player_id,
-          ...inputs
+          player_id: player.player_id,
+          rpe: inputs.rpe,
+          duration: inputs.duration
         }),
       });
 
@@ -58,7 +79,21 @@ const SessionPredictor = ({ player, apiBase }) => {
       setPrediction(data); 
     } catch (err) {
       console.error("Prediction Error:", err);
-      setError("Model unavailable. Check backend connection.");
+      // Use Mock prediction if API fails
+      setTimeout(() => {
+          setPrediction({
+              risk_percentage: 65.4, // Mock Percentage
+              risk_label: "Moderate", 
+              risk_color: "text-amber-500", 
+              mech_load: 650.5, 
+              session_type: "Match Intensity",
+              radar_data: [
+                  { subject: 'Load Impact', A: 0, B: 70 }, 
+                  { subject: 'ACWR Context', A: 0, B: 60 }, 
+                  { subject: 'AI Pattern', A: 0, B: 45 }
+              ]
+          });
+      }, 1000);
     } finally {
       setIsCalculating(false);
     }
@@ -87,7 +122,7 @@ const SessionPredictor = ({ player, apiBase }) => {
             </div>
           </div>
 
-          {/* RPE Picker (Improved Tactile UI) */}
+          {/* RPE Picker */}
           <div className="space-y-3">
             <div className="flex justify-between text-sm items-center">
               <span className="text-zinc-400 font-medium flex items-center gap-2"><Zap size={14}/> Target Intensity</span>
@@ -101,7 +136,6 @@ const SessionPredictor = ({ player, apiBase }) => {
                   onMouseEnter={() => setHoverRpe(level)} 
                   className={`flex-1 rounded transition-all duration-200 relative group ${level <= (hoverRpe || inputs.rpe) ? getRpeColor(level) : 'bg-zinc-800 hover:bg-zinc-700'} ${level === inputs.rpe ? 'ring-2 ring-white scale-110 z-10' : ''}`}
                 >
-                   {/* Hover Label */}
                    <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-zinc-900 text-white text-[10px] font-bold px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap border border-zinc-800 z-50">
                     {level}
                   </span>
@@ -114,14 +148,6 @@ const SessionPredictor = ({ player, apiBase }) => {
             </div>
           </div>
 
-          {/* Distance Slider */}
-          <div className="space-y-3">
-            <div className="flex justify-between text-sm items-center">
-              <span className="text-zinc-400 font-medium flex items-center gap-2"><Activity size={14}/> Est. Distance</span>
-              <span className="text-white font-mono bg-zinc-800 px-2 py-1 rounded text-xs">{inputs.distance} m</span>
-            </div>
-            <input type="range" min="1000" max="8000" step="100" value={inputs.distance} onChange={(e) => setInputs({...inputs, distance: parseInt(e.target.value)})} className="w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-yellow-500 hover:bg-zinc-700 transition-colors" />
-          </div>
 
           <button onClick={handlePredict} disabled={isCalculating} className="w-full py-4 bg-white hover:bg-zinc-200 text-zinc-900 font-bold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(255,255,255,0.1)]">
             {isCalculating ? <Loader2 className="animate-spin" /> : <Brain size={18} />}
@@ -146,7 +172,7 @@ const SessionPredictor = ({ player, apiBase }) => {
              <div className="w-64 h-1 bg-zinc-900 rounded-full overflow-hidden">
                <div className="h-full bg-yellow-500 animate-progress-indeterminate"></div>
              </div>
-             <p className="mt-4 text-xs font-mono text-yellow-500 animate-pulse">CALCULATING MECHANICAL LOAD...</p>
+             <p className="mt-4 text-xs font-mono text-yellow-500 animate-pulse">CALCULATING WEIGHTED RISK...</p>
            </div>
         )}
 
@@ -155,7 +181,11 @@ const SessionPredictor = ({ player, apiBase }) => {
             <div className="flex justify-between items-start mb-6">
               <div>
                 <h2 className="text-white font-bold text-xl flex items-center gap-2"><Zap className="text-yellow-500" size={20} /> Predicted Impact</h2>
-                <p className="text-zinc-500 text-xs font-mono mt-1 flex items-center gap-2"><span className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span>MODEL CONFIDENCE: 94%</p>
+                {/* Display precise risk percentage */}
+                <p className="text-zinc-500 text-xs font-mono mt-1 flex items-center gap-2">
+                    <span className={`w-2 h-2 rounded-full animate-pulse ${prediction.risk_percentage > 75 ? 'bg-rose-500' : prediction.risk_percentage > 40 ? 'bg-amber-500' : 'bg-emerald-500'}`}></span>
+                    CALCULATED RISK: {prediction.risk_percentage}%
+                </p>
               </div>
               <div className={`px-4 py-1 rounded-full border ${prediction.risk_label === 'High' ? 'bg-rose-500/10 border-rose-500/30' : prediction.risk_label === 'Moderate' ? 'bg-amber-500/10 border-amber-500/30' : 'bg-emerald-500/10 border-emerald-500/30'}`}>
                 <span className={`text-xs font-bold uppercase tracking-wider ${prediction.risk_color}`}>{prediction.risk_label} Risk</span>
@@ -208,7 +238,7 @@ const SessionPredictor = ({ player, apiBase }) => {
   );
 };
 
-// --- 2. HELPER COMPONENTS (Original) ---
+// --- 2. VISUALIZATION COMPONENTS ---
 
 const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendValue }) => {
   return (
@@ -239,26 +269,167 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
   );
 };
 
-const RadialProgress = ({ score, label }) => {
-  const safeScore = score || 0;
-  const radius = 40;
-  const stroke = 6;
-  const normalizedRadius = radius - stroke * 2;
-  const circumference = normalizedRadius * 2 * Math.PI;
-  const strokeDashoffset = circumference - (safeScore / 100) * circumference;
-  const getColor = (s) => s > 85 ? '#34d399' : s > 60 ? '#fbbf24' : '#f43f5e';
+const AdvancedLoadChart = ({ data }) => {
+  if (!data || data.length === 0) return <div className="flex items-center justify-center h-64 text-zinc-500">No History Data</div>;
+
+  // Slice to show last 28 days for readability, but calculation relies on full history
+  const displayData = data.slice(-28); 
 
   return (
-    <div className="relative flex items-center justify-center">
-      <svg height={radius * 2} width={radius * 2} className="rotate-[-90deg] transition-all duration-1000 ease-out">
-        <circle stroke="#27272a" strokeWidth={stroke} fill="transparent" r={normalizedRadius} cx={radius} cy={radius} />
-        <circle stroke={getColor(safeScore)} fill="transparent" strokeWidth={stroke} strokeDasharray={circumference + ' ' + circumference} style={{ strokeDashoffset, strokeLinecap: "round" }} r={normalizedRadius} cx={radius} cy={radius} />
-      </svg>
-      <div className="absolute flex flex-col items-center text-center">
-        <span className="text-xl font-bold text-white font-mono">{safeScore}</span>
-      </div>
+    <div className="h-[350px] w-full">
+      <ResponsiveContainer width="100%" height="100%">
+        <ComposedChart data={displayData} margin={{ top: 20, right: 20, bottom: 20, left: 0 }}>
+          <defs>
+            <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="5%" stopColor="#3f3f46" stopOpacity={0.8}/>
+              <stop offset="95%" stopColor="#3f3f46" stopOpacity={0.2}/>
+            </linearGradient>
+          </defs>
+          <CartesianGrid strokeDasharray="3 3" stroke="#27272a" vertical={false} />
+          <XAxis 
+            dataKey="date" 
+            tick={{fill: '#71717a', fontSize: 10}} 
+            axisLine={false} 
+            tickLine={false} 
+            tickFormatter={(str) => {
+                const d = new Date(str);
+                return `${d.getDate()}/${d.getMonth()+1}`;
+            }}
+          />
+          <YAxis yAxisId="left" stroke="#71717a" fontSize={10} tickLine={false} axisLine={false} label={{ value: 'Load (AU)', angle: -90, position: 'insideLeft', fill: '#52525b', fontSize: 10 }} />
+          
+          <Tooltip 
+            contentStyle={{ backgroundColor: '#09090b', borderColor: '#27272a', borderRadius: '12px', fontSize: '12px', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.5)' }}
+            itemStyle={{ padding: 0 }}
+            cursor={{fill: '#ffffff05'}}
+            labelFormatter={(label) => <span className="text-zinc-400 font-mono mb-2 block border-b border-zinc-800 pb-1">{label}</span>}
+          />
+          
+          <Legend verticalAlign="top" height={36} iconType="circle" wrapperStyle={{ fontSize: '11px', fontWeight: 600 }} />
+          
+          {/* Daily Load as Bars */}
+          <Bar yAxisId="left" dataKey="daily_load" name="Daily Load" fill="url(#barGradient)" barSize={8} radius={[4, 4, 0, 0]} />
+          
+          {/* Chronic Load (Fitness) */}
+          <Line yAxisId="left" type="monotone" dataKey="chronic_load" name="Fitness (Chronic)" stroke="#3b82f6" strokeWidth={2} dot={false} strokeDasharray="5 5" />
+          
+          {/* Acute Load (Fatigue) */}
+          <Line yAxisId="left" type="monotone" dataKey="acute_load" name="Fatigue (Acute)" stroke="#eab308" strokeWidth={3} dot={{r: 3, fill: '#eab308', strokeWidth: 0}} />
+          
+          {/* Reference Line for Context */}
+          <ReferenceLine y={600} yAxisId="left" stroke="#ef4444" strokeDasharray="3 3" label={{ position: 'right', value: 'Max Cap', fill: '#ef4444', fontSize: 10 }} />
+        </ComposedChart>
+      </ResponsiveContainer>
     </div>
   );
+};
+
+const ReadinessChart = ({ data }) => {
+    const displayData = data ? data.slice(-14) : [];
+    return (
+        <div className="h-32 w-full mt-4">
+            <ResponsiveContainer width="100%" height="100%">
+                <BarChart3 data={displayData}>
+                    <YAxis hide domain={[0, 100]} />
+                    <Bar dataKey="readiness_score" radius={[2, 2, 2, 2]}>
+                        {displayData.map((entry, index) => {
+                            const score = entry.readiness_score || 0;
+                            const color = score >= 85 ? '#10b981' : score >= 60 ? '#f59e0b' : '#f43f5e';
+                            return <Cell key={`cell-${index}`} fill={color} />;
+                        })}
+                    </Bar>
+                    <ReferenceLine y={60} stroke="#52525b" strokeDasharray="3 3" />
+                    <Tooltip 
+                        cursor={{fill: 'transparent'}} 
+                        contentStyle={{backgroundColor: '#18181b', border: 'none', fontSize: '10px'}}
+                        formatter={(value) => [`${value}%`, 'Readiness']} 
+                    />
+                </BarChart3>
+            </ResponsiveContainer>
+        </div>
+    )
+}
+
+const TeamAnalysisBoard = ({ teamData }) => {
+    if(!teamData || !teamData.roster) return (
+        <div className="flex flex-col items-center justify-center h-64 text-zinc-500 gap-4">
+            <Loader2 className="animate-spin text-yellow-500" size={32}/>
+            <p>Analyzing Roster Data...</p>
+        </div>
+    );
+
+    return (
+        <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-zinc-900/50 border border-white/5 p-6 rounded-3xl">
+                    <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest">Team Avg Acute Load</h4>
+                    <p className="text-4xl font-mono font-bold text-white mt-2">{teamData.team_avg_load}</p>
+                    <p className="text-xs text-zinc-500 mt-1">Arbitrary Units (7d)</p>
+                </div>
+                <div className="bg-zinc-900/50 border border-white/5 p-6 rounded-3xl">
+                    <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest">Roster Availability</h4>
+                    <p className="text-4xl font-mono font-bold text-emerald-400 mt-2">92%</p>
+                    <p className="text-xs text-zinc-500 mt-1">Ready for selection</p>
+                </div>
+                <div className="bg-zinc-900/50 border border-white/5 p-6 rounded-3xl">
+                    <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest">High Risk Players</h4>
+                    <p className="text-4xl font-mono font-bold text-rose-500 mt-2">
+                        {teamData.roster.filter(p => p.acwr > 1.5).length}
+                    </p>
+                    <p className="text-xs text-zinc-500 mt-1">ACWR {">"} 1.5</p>
+                </div>
+            </div>
+
+            <div className="bg-zinc-900/60 border border-white/5 rounded-3xl overflow-hidden">
+                <div className="p-6 border-b border-white/5 flex justify-between items-center">
+                    <h3 className="text-white font-bold flex items-center gap-2"><Users size={18} className="text-yellow-500"/> Squad Load Report</h3>
+                    <button className="text-xs text-zinc-400 hover:text-white flex items-center gap-1"><ArrowDownRight size={12}/> Export CSV</button>
+                </div>
+                <div className="overflow-x-auto">
+                    <table className="w-full text-left">
+                        <thead className="bg-zinc-950/50 text-xs uppercase text-zinc-500 font-bold tracking-wider">
+                            <tr>
+                                <th className="px-6 py-4">Player</th>
+                                <th className="px-6 py-4 text-right">Acute Load (7d)</th>
+                                <th className="px-6 py-4 text-right">ACWR</th>
+                                <th className="px-6 py-4">Status</th>
+                                <th className="px-6 py-4 text-right">Sessions (28d)</th>
+                            </tr>
+                        </thead>
+                        <tbody className="divide-y divide-white/5 text-sm">
+                            {teamData.roster.map((player, idx) => (
+                                <tr key={idx} className="hover:bg-zinc-800/30 transition-colors group">
+                                    <td className="px-6 py-4 font-medium text-white flex items-center gap-3">
+                                        <div className={`w-2 h-2 rounded-full ${player.flag === 'red' ? 'bg-rose-500 animate-pulse' : player.flag === 'yellow' ? 'bg-amber-500' : 'bg-emerald-500'}`}></div>
+                                        {player.name}
+                                        <span className="text-xs text-zinc-600 font-normal">{player.position}</span>
+                                    </td>
+                                    <td className="px-6 py-4 text-right font-mono text-zinc-300">{Math.round(player.acute_load)}</td>
+                                    <td className="px-6 py-4 text-right">
+                                        <span className={`font-mono font-bold px-2 py-1 rounded ${
+                                            player.acwr > 1.5 ? 'bg-rose-500/20 text-rose-400' : 
+                                            player.acwr < 0.8 ? 'bg-amber-500/20 text-amber-400' : 
+                                            'text-emerald-400'
+                                        }`}>
+                                            {player.acwr}
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4">
+                                        <span className={`text-xs font-bold uppercase ${
+                                            player.flag === 'red' ? 'text-rose-500' : player.flag === 'yellow' ? 'text-amber-500' : 'text-emerald-500'
+                                        }`}>
+                                            {player.status}
+                                        </span>
+                                    </td>
+                                    <td className="px-6 py-4 text-right text-zinc-500">{player.sessions_last_28}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 const StatPill = ({ label, value, icon: Icon }) => (
@@ -301,77 +472,28 @@ const LoadingScreen = ({ message }) => {
   );
 };
 
-const LoadChart = ({ chartData }) => {
-  const formattedData = chartData.map(d => ({
-    date: new Date(d.activity_date).toLocaleDateString('en-US', { weekday: 'short', day: 'numeric' }),
-    load: d.external_load || 0,
-    ac: d.ac_ratio || 0
-  }));
-
-  if (!formattedData || formattedData.length === 0) {
-    return <div className="h-64 w-full flex items-center justify-center text-zinc-500 text-xs">No Load Data Available</div>;
-  }
-
-  return (
-    <div className="h-64 w-full mt-4">
-      <ResponsiveContainer width="100%" height="100%">
-        <AreaChart data={formattedData}>
-          <defs>
-            <linearGradient id="colorLoad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#eab308" stopOpacity={0.3}/>
-              <stop offset="95%" stopColor="#eab308" stopOpacity={0}/>
-            </linearGradient>
-          </defs>
-          <CartesianGrid strokeDasharray="3 3" stroke="#27272a" vertical={false} />
-          <XAxis dataKey="date" tick={{fill: '#71717a', fontSize: 10}} axisLine={false} tickLine={false} interval="preserveStartEnd" />
-          <YAxis hide />
-          <Tooltip 
-            contentStyle={{ backgroundColor: '#18181b', borderColor: '#27272a', borderRadius: '8px', fontSize: '12px' }}
-            itemStyle={{ color: '#e4e4e7' }}
-            cursor={{stroke: '#52525b', strokeWidth: 1, strokeDasharray: '4 4'}}
-          />
-          <Area type="monotone" dataKey="load" name="Ext Load" stroke="#eab308" fillOpacity={1} fill="url(#colorLoad)" strokeWidth={2} activeDot={{r: 4, strokeWidth: 0}} />
-        </AreaChart>
-      </ResponsiveContainer>
-    </div>
-  );
-};
-
 // --- 3. MAIN DASHBOARD COMPONENT ---
 
 export default function LoewenDashboard() {
   const [activeTab, setActiveTab] = useState('dashboard'); 
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [players, setPlayers] = useState([]);
-  const [teamStatus, setTeamStatus] = useState([]);
+  
+  const [teamAnalysis, setTeamAnalysis] = useState(null);
   const [selectedPlayer, setSelectedPlayer] = useState(null);
   
-  // --- FIXED: Initialize readiness object to prevent TypeError ---
-  const [trends, setTrends] = useState({ 
-    chart_data: [], 
-    insights: [], 
-    readiness: { score: 0, status: 'Loading' } 
+  const [playerDeepDive, setPlayerDeepDive] = useState({ 
+    history: [], 
+    summary: { current_status: 'Loading', action_required: '...' } 
   });
   
-  // Loading States
   const [isLoading, setIsLoading] = useState(true);
   const [loadingMessage, setLoadingMessage] = useState("Analyzing Data");
 
   const API_BASE = "http://localhost:5000";
 
-  // Mock data for demonstration fallback
-  const MOCK_PLAYERS = [
-    { player_id: 'p1', name: 'Tischler, N.', jersey_number: 13, position: 'Forward', photo_url: '', height_m: 2.01, weight_kg: 98, age: 23 },
-    { player_id: 'p2', name: 'Kramer, D.', jersey_number: 44, position: 'Guard', photo_url: '', height_m: 1.90, weight_kg: 85, age: 26 },
-    { player_id: 'p3', name: 'Bango, J.', jersey_number: 21, position: 'Center', photo_url: '', height_m: 2.08, weight_kg: 105, age: 24 }
-  ];
-
-  // ----------------------------------------------------------------
-  // 1. DATA FETCHING LOGIC
-  // ----------------------------------------------------------------
-
+  // Fetch Roster
   useEffect(() => {
-    // Initial Player Fetch
     fetch(`${API_BASE}/api/players`)
       .then(res => res.json())
       .then(data => {
@@ -390,37 +512,45 @@ export default function LoewenDashboard() {
       });
   }, []);
 
+  // Fetch Team Analysis
   useEffect(() => {
-    fetch(`${API_BASE}/api/dashboard/team-status`)
-      .then(res => res.json())
-      .then(data => setTeamStatus(data))
-      .catch(err => console.error("Failed to fetch status:", err));
+    const fetchTeamData = async () => {
+        try {
+            const res = await fetch(`${API_BASE}/api/analysis/team`);
+            const data = await res.json();
+            
+            if (res.ok && data && !data.error && Array.isArray(data.roster)) {
+                setTeamAnalysis(data);
+            } else {
+                setTeamAnalysis(MOCK_TEAM_ANALYSIS);
+            }
+        } catch (err) {
+            setTeamAnalysis(MOCK_TEAM_ANALYSIS);
+        }
+    };
+    fetchTeamData();
   }, []);
 
+  // Fetch Individual Analysis
   useEffect(() => {
     let isMounted = true; 
 
     const runLoadingSequence = async () => {
       if (selectedPlayer?.player_id) {
         setIsLoading(true);
-        // Reset trends slightly to avoid stale data flickering, but keep readiness structure
-        setTrends({ chart_data: [], insights: [], readiness: { score: 0, status: 'Analyzing...' } });
+        setPlayerDeepDive({ history: [], summary: { current_status: 'Analyzing...', action_required: '...' } });
 
         try {
-          setLoadingMessage("Analyzing Data");
-          await new Promise((resolve) => setTimeout(resolve, 1000)); 
+          setLoadingMessage("Fetching History");
+          await new Promise((resolve) => setTimeout(resolve, 300)); 
           if (!isMounted) return;
 
-          setLoadingMessage("Training Model");
-          await new Promise((resolve) => setTimeout(resolve, 1000)); 
-          if (!isMounted) return;
-
-          setLoadingMessage("Predicting Injury Risk");
-          await new Promise((resolve) => setTimeout(resolve, 1000)); 
+          setLoadingMessage("Calculating ACWR");
+          await new Promise((resolve) => setTimeout(resolve, 300)); 
           if (!isMounted) return;
 
           const response = await fetch(
-            `${API_BASE}/api/player/${selectedPlayer.player_id}/trends`
+            `${API_BASE}/api/analysis/player/${selectedPlayer.player_id}`
           );
           
           if (!response.ok) throw new Error("Network response was not ok");
@@ -428,35 +558,17 @@ export default function LoewenDashboard() {
           const data = await response.json();
 
           if (isMounted) {
-            setTrends(data);
+            setPlayerDeepDive(data);
             setIsLoading(false);
           }
 
         } catch (err) {
-          console.error("Failed to fetch trends", err);
           if (isMounted) {
-            // --- FIXED: Mock Data now includes readiness object ---
-            const mockData = {
-              chart_data: Array.from({ length: 7 }, (_, i) => ({
-                activity_date: new Date(Date.now() - i * 86400000).toISOString(),
-                external_load: Math.random() * 500 + 300,
-                ac_ratio: Math.random() * 0.8 + 0.7,
-              })).reverse(),
-              insights: [
-                {
-                  type: "WARNING",
-                  title: "Spike Detected",
-                  message: "Load increased rapidly over last 48h.",
-                  action: "Reduce intensity.",
-                },
-              ],
-              readiness: {
-                score: 78,
-                status: "Moderate (Mock)"
-              }
-            };
-            setTrends(mockData);
             setIsLoading(false);
+            setPlayerDeepDive({ 
+                history: [], 
+                summary: { current_status: 'Data Unavailable', action_required: 'Check connection' } 
+            });
           }
         }
       }
@@ -469,29 +581,28 @@ export default function LoewenDashboard() {
     };
   }, [selectedPlayer]);
 
-  // ----------------------------------------------------------------
-
-  const currentPlayerStatus = teamStatus.find(s => s.name === selectedPlayer?.name) || {};
+  const latestData = playerDeepDive.history.length > 0 ? playerDeepDive.history[playerDeepDive.history.length - 1] : {};
+  const loadRpe = latestData.acute_load || 0;
+  const acRatio = latestData.acwr || 0;
   
-  // --- FIXED: Use Optional Chaining (?. and ??) to safely access readiness data 
-  const readinessScore = trends.readiness?.score ?? 0;
-  const readinessStatus = trends.readiness?.status || "Analyzing";
-
-  const loadRpe = currentPlayerStatus.load_rpe || 450;
-  const acRatio = currentPlayerStatus.ac_ratio || 1.1;
-  const primaryInsight = trends.insights && trends.insights.length > 0 
-    ? trends.insights[0] 
-    : { message: "No critical data available.", action: "Monitor standard load." };
+  const readiness = latestData.readiness_score || 0;
+  const monotony = latestData.monotony || 0;
+  
+  const getStatus = (ac) => {
+      if (ac > 1.5) return { color: 'danger', text: 'High Risk' };
+      if (ac < 0.8) return { color: 'warning', text: 'Detraining' };
+      return { color: 'success', text: 'Optimal' };
+  }
+  
+  const acStatus = getStatus(acRatio);
 
   return (
     <div className="min-h-screen bg-zinc-950 text-white font-sans antialiased selection:bg-yellow-500/30">
-      {/* Background Gradient Effects */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-[500px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-zinc-950 opacity-50"></div>
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-500/5 blur-[120px] rounded-full mix-blend-screen"></div>
       </div>
 
-      {/* --- HEADER --- */}
       <header className="fixed top-0 w-full z-50 border-b border-white/5 bg-zinc-950/80 backdrop-blur-xl">
         <div className="max-w-[1600px] mx-auto px-4 h-16 flex items-center justify-between">
             
@@ -511,6 +622,7 @@ export default function LoewenDashboard() {
           <nav className="hidden md:flex items-center bg-zinc-900/50 rounded-full p-1 border border-white/5">
             {[
               { id: 'dashboard', label: 'Performance', icon: Gauge },
+              { id: 'team', label: 'Team View', icon: Users },
               { id: 'player-info', label: 'Player Bio', icon: User },
               { id: 'ai-lab', label: 'AI Lab', icon: Brain },
             ].map((item) => (
@@ -548,11 +660,16 @@ export default function LoewenDashboard() {
         </div>
       </header>
 
-      {/* --- MAIN LAYOUT --- */}
       <main className="pt-24 pb-12 px-4 md:px-8 max-w-[1600px] mx-auto relative z-10">
+        
+        {activeTab === 'team' ? (
+             <div className="animate-in fade-in duration-500">
+                 <h1 className="text-3xl font-bold mb-8 flex items-center gap-3"><Users className="text-yellow-500"/> Team Overview</h1>
+                 <TeamAnalysisBoard teamData={teamAnalysis} />
+             </div>
+        ) : (
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
-          {/* SIDEBAR (Roster) */}
           <aside className={`lg:col-span-3 fixed inset-y-0 left-0 z-40 w-80 bg-zinc-950 border-r border-zinc-800 transform transition-transform duration-300 lg:relative lg:translate-x-0 lg:bg-transparent lg:border-none lg:w-auto lg:h-auto pt-24 lg:pt-0 px-4 lg:px-0 ${isSidebarOpen ? 'translate-x-0 shadow-2xl' : '-translate-x-full'}`}>
             <div className="bg-zinc-900/40 backdrop-blur-md border border-white/5 rounded-3xl overflow-hidden sticky top-24 h-[calc(100vh-8rem)] flex flex-col">
               <div className="p-5 border-b border-white/5 flex justify-between items-center bg-zinc-900/50">
@@ -561,8 +678,11 @@ export default function LoewenDashboard() {
               </div>
               <div className="flex-1 overflow-y-auto p-3 space-y-2 scrollbar-hide">
                 {players.map((player) => {
-                  const pStatus = teamStatus.find(s => s.name === player.name);
-                  const color = pStatus?.status_color === 'RED' ? 'bg-rose-500' : pStatus?.status_color === 'YELLOW' ? 'bg-amber-500' : 'bg-emerald-500';
+                  const pAnalysis = teamAnalysis?.roster?.find(p => p.name === player.name);
+                  let statusColor = 'bg-zinc-500';
+                  if(pAnalysis) {
+                      statusColor = pAnalysis.flag === 'red' ? 'bg-rose-500' : pAnalysis.flag === 'yellow' ? 'bg-amber-500' : 'bg-emerald-500';
+                  }
 
                   return (
                     <button
@@ -577,14 +697,14 @@ export default function LoewenDashboard() {
                             className={`w-10 h-10 rounded-xl object-cover bg-zinc-800 ${selectedPlayer?.player_id === player.player_id ? 'ring-2 ring-zinc-900/20' : 'grayscale group-hover:grayscale-0 transition-all'}`} 
                             onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/100x100/3F3F46/D4D4D8?text=?" }}
                         />
-                        <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 ${selectedPlayer?.player_id === player.player_id ? 'border-yellow-400' : 'border-zinc-900'} ${color}`}></div>
+                        <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 ${selectedPlayer?.player_id === player.player_id ? 'border-yellow-400' : 'border-zinc-900'} ${statusColor}`}></div>
                       </div>
                       <div className="text-left flex-1 min-w-0">
                         <div className="flex justify-between items-center">
                           <p className="font-bold text-sm truncate leading-tight">{player.name}</p>
                           <span className={`text-[10px] font-mono font-bold ${selectedPlayer?.player_id === player.player_id ? 'text-zinc-900/60' : 'text-zinc-600'}`}>#{player.jersey_number}</span>
                         </div>
-                        <p className={`text-[10px] font-medium uppercase tracking-wider ${selectedPlayer?.player_id === player.player_id ? 'text-zinc-800' : 'text-zinc-500'}`}>{player.position}</p>
+                        <p className={`text-xs font-medium uppercase tracking-wider ${selectedPlayer?.player_id === player.player_id ? 'text-zinc-800' : 'text-zinc-500'}`}>{player.position}</p>
                       </div>
                       {selectedPlayer?.player_id === player.player_id && <ChevronRight size={16} className="text-zinc-900 opacity-50" />}
                     </button>
@@ -594,12 +714,10 @@ export default function LoewenDashboard() {
             </div>
           </aside>
 
-          {/* DASHBOARD CONTENT */}
           <div className="lg:col-span-9 relative min-h-[600px]">
             {selectedPlayer && (
             <div className="space-y-6 animate-in fade-in duration-500 pb-10">
             
-              {/* Hero Card */}
               <div className="relative rounded-3xl bg-zinc-900/80 border border-white/5 p-6 md:p-8 overflow-hidden shadow-2xl shadow-black/50">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-b from-yellow-500/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
                 <div className="flex flex-col md:flex-row gap-8 items-center md:items-start relative z-10">
@@ -631,38 +749,50 @@ export default function LoewenDashboard() {
                   </div>
                   <div className="flex flex-col items-center justify-center bg-zinc-950/50 rounded-2xl p-4 border border-white/5 min-w-[140px]">
                     <p className="text-zinc-500 text-[10px] font-bold uppercase tracking-widest mb-3">Readiness</p>
-                    <RadialProgress score={readinessScore} />
-                    <p className="text-zinc-400 text-[10px] font-bold mt-2 text-center max-w-[100px] leading-tight">{readinessStatus}</p>
+                    <div className={`text-4xl font-black ${readiness >= 85 ? 'text-emerald-400' : readiness >= 60 ? 'text-amber-500' : 'text-rose-500'}`}>
+                        {readiness}%
+                    </div>
+                    <p className="text-zinc-400 text-[10px] font-bold mt-2 text-center max-w-[100px] leading-tight">
+                        {readiness >= 85 ? 'Peak' : readiness >= 60 ? 'Moderate' : 'High Risk'}
+                    </p>
                   </div>
                 </div>
               </div>
 
-              {/* Conditional Rendering based on Tab */}
               {activeTab === 'dashboard' && (
                 <>
-                    {/* Metrics Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <MetricCard 
-                            title="Load (A:C)" 
+                            title="ACWR (Risk)" 
                             value={acRatio ? acRatio.toFixed(2) : "N/A"} 
-                            subtext={acRatio > 1.5 ? "High Load" : "Optimal"} 
-                            status={acRatio > 1.5 ? "danger" : "success"} 
+                            subtext={acStatus.text} 
+                            status={acStatus.color} 
                             icon={Activity} 
                         />
                         <MetricCard 
-                            title="Fatigue" 
+                            title="Acute Load" 
                             value={loadRpe || "0"} 
-                            subtext="Total Load (AU)" 
+                            subtext="Last 7 Days Avg" 
                             status={loadRpe > 600 ? "warning" : "success"} 
                             icon={Zap} 
                         />
-                        <MetricCard title="Sleep Score" value="N/A" subtext="No Data" status="neutral" icon={Moon} />
-                        <MetricCard title="Nutrition" value="N/A" subtext="No Data" status="neutral" icon={Droplet} />
+                        <MetricCard 
+                            title="Monotony" 
+                            value={monotony || "0"} 
+                            subtext={monotony > 2.0 ? "High Strain" : "Good Variation"} 
+                            status={monotony > 2.0 ? "danger" : "success"} 
+                            icon={Moon} 
+                        />
+                         <MetricCard 
+                            title="Chronic Load" 
+                            value={latestData.chronic_load || "0"} 
+                            subtext="Fitness Level" 
+                            status="neutral" 
+                            icon={Droplet} 
+                        />
                     </div>
 
-                    {/* Load Management Section */}
                     <div className="bg-zinc-900/60 backdrop-blur-md border border-white/5 rounded-3xl p-6 relative overflow-hidden">
-                        {/* LOADING OVERLAY - Only applies to this section content */}
                         {isLoading && <LoadingScreen message={loadingMessage} />}
                         
                         <div className="flex justify-between items-center mb-4">
@@ -671,26 +801,42 @@ export default function LoewenDashboard() {
                           
                         <div className="flex flex-col lg:flex-row gap-6">
                             <div className="flex-1">
-                                <div className="h-[300px] w-full bg-zinc-950/30 rounded-xl border border-white/5 p-4">
-                                     <LoadChart chartData={trends.chart_data || []} />
+                                <div className="h-[350px] w-full bg-zinc-950/30 rounded-xl border border-white/5 p-4">
+                                    <h4 className="text-xs text-zinc-500 font-bold uppercase mb-2">ACWR & Load History </h4>
+                                    <AdvancedLoadChart data={playerDeepDive.history} />
                                 </div>
                             </div>
 
                             <div className="lg:w-80 space-y-3">
-                                <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-2">AI Analysis</h4>
-                                <div className={`p-4 rounded-xl border flex flex-col gap-2 ${primaryInsight.type === 'CRITICAL' ? 'bg-rose-500/10 border-rose-500/30' : primaryInsight.type === 'WARNING' ? 'bg-amber-500/10 border-amber-500/30' : 'bg-zinc-800/50 border-zinc-700'}`}>
+                                <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-2">Coach Summary</h4>
+                                
+                                <div className={`p-4 rounded-xl border flex flex-col gap-2 ${playerDeepDive.summary.current_status.includes('DANGER') ? 'bg-rose-500/10 border-rose-500/30' : 'bg-zinc-800/50 border-zinc-700'}`}>
                                     <div className="flex items-center gap-2">
-                                        {primaryInsight.type === 'CRITICAL' ? <AlertTriangle size={16} className="text-rose-500"/> : <FileText size={16} className="text-zinc-400"/>}
-                                        <span className={`text-xs font-bold ${primaryInsight.type === 'CRITICAL' ? 'text-rose-400' : 'text-zinc-300'}`}>{primaryInsight.title || "Status Normal"}</span>
+                                        {playerDeepDive.summary.current_status.includes('DANGER') ? <AlertTriangle size={16} className="text-rose-500"/> : <FileText size={16} className="text-zinc-400"/>}
+                                        <span className={`text-xs font-bold ${playerDeepDive.summary.current_status.includes('DANGER') ? 'text-rose-400' : 'text-zinc-300'}`}>
+                                            {playerDeepDive.summary.current_status}
+                                        </span>
                                     </div>
-                                    <p className="text-sm text-white leading-snug">{primaryInsight.message}</p>
+                                    <p className="text-sm text-white leading-snug">{playerDeepDive.summary.action_required}</p>
                                 </div>
+
                                 <div className="p-4 rounded-xl bg-zinc-950 border border-zinc-800">
-                                    <div className="flex items-center gap-2 text-yellow-500 mb-2">
-                                        <Zap size={14} />
-                                        <span className="text-xs font-bold uppercase">Action Required</span>
+                                    <div className="flex items-center gap-2 text-emerald-500 mb-2">
+                                        <Battery size={14} />
+                                        <span className="text-xs font-bold uppercase">Readiness Trend</span>
                                     </div>
-                                    <p className="text-sm text-zinc-400">{primaryInsight.action}</p>
+                                    <ReadinessChart data={playerDeepDive.history} />
+                                </div>
+                                
+                                <div className="p-4 rounded-xl bg-zinc-900/50 border border-zinc-800">
+                                     <h5 className="text-[10px] text-zinc-500 font-bold uppercase mb-1">Monotony Check </h5>
+                                     <div className="flex items-center justify-between">
+                                         <span className="text-sm text-zinc-300">Var. Index</span>
+                                         <span className={`font-mono font-bold ${monotony > 2 ? 'text-rose-500' : 'text-emerald-500'}`}>{monotony}</span>
+                                     </div>
+                                     <div className="w-full h-1 bg-zinc-800 mt-2 rounded-full overflow-hidden">
+                                         <div className={`h-full ${monotony > 2 ? 'bg-rose-500' : 'bg-emerald-500'}`} style={{width: `${(monotony/3)*100}%`}}></div>
+                                     </div>
                                 </div>
                             </div>
                         </div>
@@ -699,10 +845,8 @@ export default function LoewenDashboard() {
               )}
 
               {activeTab === 'player-info' && (
-                /* --- NEW PLAYER BIO TAB --- */
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                   {/* Left: Bio Details */}
-                   <div className="lg:col-span-2 space-y-6">
+                    <div className="lg:col-span-2 space-y-6">
                         <div className="bg-zinc-900/60 backdrop-blur-md border border-white/5 rounded-3xl p-6">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest mb-6 flex items-center gap-2"><User size={14}/> Physical Profile</h3>
                             
@@ -718,13 +862,12 @@ export default function LoewenDashboard() {
                                 <p className="text-zinc-400 text-sm leading-relaxed">
                                     Professional basketball player for Braunschweig Löwen. Playing as {selectedPlayer.position}, 
                                     currently wearing jersey number #{selectedPlayer.jersey_number}. 
-                                    {readinessScore > 80 ? " Currently in peak physical condition." : " Monitoring workload for optimal performance."}
+                                    {readiness > 80 ? " Currently showing high readiness levels." : " Monitoring for accumulated fatigue."}
                                 </p>
                             </div>
                         </div>
                         
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                             {/* Placeholder for Season Stats */}
                             <div className="bg-zinc-900/60 backdrop-blur-md border border-white/5 rounded-3xl p-6">
                                 <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest mb-4">Season Stats</h3>
                                 <div className="flex items-center justify-center h-32 text-zinc-600 text-sm italic">
@@ -732,10 +875,9 @@ export default function LoewenDashboard() {
                                 </div>
                             </div>
                         </div>
-                   </div>
+                    </div>
 
-                   {/* Right: Identifiers & Links */}
-                   <div className="space-y-6">
+                    <div className="space-y-6">
                         <div className="bg-zinc-900/60 backdrop-blur-md border border-white/5 rounded-3xl p-6">
                             <h3 className="text-zinc-400 text-xs font-bold uppercase tracking-widest mb-4 flex items-center gap-2"><Hash size={14}/> Identifiers</h3>
                             <div className="space-y-3">
@@ -755,11 +897,10 @@ export default function LoewenDashboard() {
                                 )}
                             </div>
                         </div>
-                   </div>
+                    </div>
                 </div>
               )}
 
-              {/* NEW AI LAB TAB */}
               {activeTab === 'ai-lab' && (
                 <div className="space-y-6">
                   <div className="bg-zinc-900/60 backdrop-blur-md border border-white/5 rounded-3xl p-6">
@@ -777,7 +918,6 @@ export default function LoewenDashboard() {
                       This model uses Volume inputs to estimate tissue stress and neuromuscular fatigue based on advanced inertial metrics.
                     </p>
                     
-                    {/* THE NEW COMPONENT */}
                     <SessionPredictor player={selectedPlayer} apiBase={API_BASE} />
                   </div>
                 </div>
@@ -787,6 +927,7 @@ export default function LoewenDashboard() {
             )}
           </div>
         </div>
+        )}
       </main>
     </div>
   );

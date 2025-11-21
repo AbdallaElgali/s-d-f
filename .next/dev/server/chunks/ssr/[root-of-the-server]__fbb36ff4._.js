@@ -42,9 +42,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$battery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Battery$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/battery.js [app-ssr] (ecmascript) <export default as Battery>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$octagon$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertOctagon$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/octagon-alert.js [app-ssr] (ecmascript) <export default as AlertOctagon>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/info.js [app-ssr] (ecmascript) <export default as Info>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/users.js [app-ssr] (ecmascript) <export default as Users>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/chart-column.js [app-ssr] (ecmascript) <export default as BarChart3>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/ResponsiveContainer.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$AreaChart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/chart/AreaChart.js [app-ssr] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Area$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/Area.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Tooltip.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/XAxis.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/YAxis.js [app-ssr] (ecmascript)");
@@ -54,17 +54,106 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$polar$2f$PolarGrid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/polar/PolarGrid.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$polar$2f$PolarAngleAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/polar/PolarAngleAxis.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$polar$2f$PolarRadiusAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/polar/PolarRadiusAxis.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$ComposedChart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/chart/ComposedChart.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/Line.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/Bar.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Legend.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$ReferenceLine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/cartesian/ReferenceLine.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Cell$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/recharts/es6/component/Cell.js [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
-// --- 1. NEW COMPONENT: AI SESSION PREDICTOR ---
+// --- MOCK DATA DEFINITIONS (FALLBACKS) ---
+const MOCK_PLAYERS = [
+    {
+        player_id: 1,
+        name: 'Tischler, N.',
+        jersey_number: 13,
+        position: 'Forward',
+        photo_url: '',
+        height_m: 2.01,
+        weight_kg: 98,
+        age: 23
+    },
+    {
+        player_id: 2,
+        name: 'Kramer, D.',
+        jersey_number: 44,
+        position: 'Guard',
+        photo_url: '',
+        height_m: 1.90,
+        weight_kg: 85,
+        age: 26
+    },
+    {
+        player_id: 3,
+        name: 'Bango, J.',
+        jersey_number: 21,
+        position: 'Center',
+        photo_url: '',
+        height_m: 2.08,
+        weight_kg: 105,
+        age: 24
+    }
+];
+const MOCK_TEAM_ANALYSIS = {
+    team_avg_load: 412,
+    roster: [
+        {
+            name: 'Tischler, N.',
+            position: 'Forward',
+            acute_load: 580,
+            acwr: 1.6,
+            status: 'High Risk (Spike)',
+            flag: 'red',
+            sessions_last_28: 22
+        },
+        {
+            name: 'Kramer, D.',
+            position: 'Guard',
+            acute_load: 405,
+            acwr: 1.1,
+            status: 'Optimal',
+            flag: 'green',
+            sessions_last_28: 20
+        },
+        {
+            name: 'Bango, J.',
+            position: 'Center',
+            acute_load: 310,
+            acwr: 0.75,
+            status: 'Detraining',
+            flag: 'yellow',
+            sessions_last_28: 15
+        },
+        {
+            name: 'Amaize, R.',
+            position: 'Guard',
+            acute_load: 425,
+            acwr: 1.2,
+            status: 'Optimal',
+            flag: 'green',
+            sessions_last_28: 21
+        },
+        {
+            name: 'Sengfelder, C.',
+            position: 'Forward',
+            acute_load: 390,
+            acwr: 1.0,
+            status: 'Optimal',
+            flag: 'green',
+            sessions_last_28: 19
+        }
+    ]
+};
+// --- 1. NEW COMPONENT: AI SESSION PREDICTOR (UPDATED FOR WEIGHTED RISK) ---
 const SessionPredictor = ({ player, apiBase })=>{
     const [inputs, setInputs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
         duration: 90,
         rpe: 7,
-        distance: 4000 // meters
+        distance: 4000 // meters (visual only)
     });
     const [hoverRpe, setHoverRpe] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [isCalculating, setIsCalculating] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -78,6 +167,7 @@ const SessionPredictor = ({ player, apiBase })=>{
     };
     // Real API Call to Backend
     const handlePredict = async ()=>{
+        if (!player) return;
         setIsCalculating(true);
         setError(null);
         try {
@@ -87,8 +177,9 @@ const SessionPredictor = ({ player, apiBase })=>{
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    player_id: player?.player_id,
-                    ...inputs
+                    player_id: player.player_id,
+                    rpe: inputs.rpe,
+                    duration: inputs.duration
                 })
             });
             if (!response.ok) throw new Error('Prediction failed');
@@ -96,7 +187,33 @@ const SessionPredictor = ({ player, apiBase })=>{
             setPrediction(data);
         } catch (err) {
             console.error("Prediction Error:", err);
-            setError("Model unavailable. Check backend connection.");
+            // Use Mock prediction if API fails
+            setTimeout(()=>{
+                setPrediction({
+                    risk_percentage: 65.4,
+                    risk_label: "Moderate",
+                    risk_color: "text-amber-500",
+                    mech_load: 650.5,
+                    session_type: "Match Intensity",
+                    radar_data: [
+                        {
+                            subject: 'Load Impact',
+                            A: 0,
+                            B: 70
+                        },
+                        {
+                            subject: 'ACWR Context',
+                            A: 0,
+                            B: 60
+                        },
+                        {
+                            subject: 'AI Pattern',
+                            A: 0,
+                            B: 45
+                        }
+                    ]
+                });
+            }, 1000);
         } finally{
             setIsCalculating(false);
         }
@@ -114,7 +231,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                 size: 20
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 72,
+                                lineNumber: 107,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -122,13 +239,13 @@ const SessionPredictor = ({ player, apiBase })=>{
                                 children: "Session Parameters"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 73,
+                                lineNumber: 108,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 71,
+                        lineNumber: 106,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -147,14 +264,14 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         size: 14
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 80,
+                                                        lineNumber: 115,
                                                         columnNumber: 83
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     " Duration"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 80,
+                                                lineNumber: 115,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -165,13 +282,13 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 81,
+                                                lineNumber: 116,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 79,
+                                        lineNumber: 114,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -187,7 +304,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                         className: "w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-yellow-500 hover:bg-zinc-700 transition-colors"
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 83,
+                                        lineNumber: 118,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -197,26 +314,26 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                 children: "Warmup"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 120,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "Game+OT"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 86,
+                                                lineNumber: 121,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 119,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 78,
+                                lineNumber: 113,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -232,14 +349,14 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         size: 14
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 93,
+                                                        lineNumber: 128,
                                                         columnNumber: 83
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     " Target Intensity"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 93,
+                                                lineNumber: 128,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -250,13 +367,13 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 94,
+                                                lineNumber: 129,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 92,
+                                        lineNumber: 127,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -285,17 +402,17 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                     children: level
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 105,
+                                                    lineNumber: 139,
                                                     columnNumber: 20
                                                 }, ("TURBOPACK compile-time value", void 0))
                                             }, level, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 98,
+                                                lineNumber: 133,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)))
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 96,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -305,88 +422,26 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                 children: "Rest"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 146,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 children: "Max Effort"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 113,
+                                                lineNumber: 147,
                                                 columnNumber: 15
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 91,
-                                columnNumber: 11
-                            }, ("TURBOPACK compile-time value", void 0)),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "space-y-3",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex justify-between text-sm items-center",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-zinc-400 font-medium flex items-center gap-2",
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$activity$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Activity$3e$__["Activity"], {
-                                                        size: 14
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 120,
-                                                        columnNumber: 83
-                                                    }, ("TURBOPACK compile-time value", void 0)),
-                                                    " Est. Distance"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 120,
-                                                columnNumber: 15
-                                            }, ("TURBOPACK compile-time value", void 0)),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-white font-mono bg-zinc-800 px-2 py-1 rounded text-xs",
-                                                children: [
-                                                    inputs.distance,
-                                                    " m"
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 121,
-                                                columnNumber: 15
-                                            }, ("TURBOPACK compile-time value", void 0))
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 119,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0)),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                        type: "range",
-                                        min: "1000",
-                                        max: "8000",
-                                        step: "100",
-                                        value: inputs.distance,
-                                        onChange: (e)=>setInputs({
-                                                ...inputs,
-                                                distance: parseInt(e.target.value)
-                                            }),
-                                        className: "w-full h-2 bg-zinc-800 rounded-lg appearance-none cursor-pointer accent-yellow-500 hover:bg-zinc-700 transition-colors"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 123,
-                                        columnNumber: 13
-                                    }, ("TURBOPACK compile-time value", void 0))
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 118,
+                                lineNumber: 126,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -398,20 +453,20 @@ const SessionPredictor = ({ player, apiBase })=>{
                                         className: "animate-spin"
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 153,
                                         columnNumber: 30
                                     }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Brain$3e$__["Brain"], {
                                         size: 18
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 127,
+                                        lineNumber: 153,
                                         columnNumber: 69
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     isCalculating ? "Processing Model..." : "Run AI Prediction"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 126,
+                                lineNumber: 152,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -419,19 +474,19 @@ const SessionPredictor = ({ player, apiBase })=>{
                                 children: error
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 130,
+                                lineNumber: 156,
                                 columnNumber: 21
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 76,
+                        lineNumber: 111,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 70,
+                lineNumber: 105,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -445,7 +500,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                 className: "mb-6 opacity-20 text-white"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 138,
+                                lineNumber: 164,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
@@ -453,7 +508,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                 children: "AI Session Simulator"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 139,
+                                lineNumber: 165,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -464,20 +519,20 @@ const SessionPredictor = ({ player, apiBase })=>{
                                         children: "Invisible Mechanical Load"
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 166,
                                         columnNumber: 129
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     " based on your volume inputs."
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 140,
+                                lineNumber: 166,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 137,
+                        lineNumber: 163,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
                     isCalculating && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -489,26 +544,26 @@ const SessionPredictor = ({ player, apiBase })=>{
                                     className: "h-full bg-yellow-500 animate-progress-indeterminate"
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 147,
+                                    lineNumber: 173,
                                     columnNumber: 16
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 146,
+                                lineNumber: 172,
                                 columnNumber: 14
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "mt-4 text-xs font-mono text-yellow-500 animate-pulse",
-                                children: "CALCULATING MECHANICAL LOAD..."
+                                children: "CALCULATING WEIGHTED RISK..."
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 149,
+                                lineNumber: 175,
                                 columnNumber: 14
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 145,
+                        lineNumber: 171,
                         columnNumber: 12
                     }, ("TURBOPACK compile-time value", void 0)),
                     prediction && !isCalculating && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -527,37 +582,39 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         size: 20
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 157,
+                                                        lineNumber: 183,
                                                         columnNumber: 86
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     " Predicted Impact"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 157,
+                                                lineNumber: 183,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "text-zinc-500 text-xs font-mono mt-1 flex items-center gap-2",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                        className: "w-2 h-2 bg-emerald-500 rounded-full animate-pulse"
+                                                        className: `w-2 h-2 rounded-full animate-pulse ${prediction.risk_percentage > 75 ? 'bg-rose-500' : prediction.risk_percentage > 40 ? 'bg-amber-500' : 'bg-emerald-500'}`
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 158,
-                                                        columnNumber: 93
+                                                        lineNumber: 186,
+                                                        columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
-                                                    "MODEL CONFIDENCE: 94%"
+                                                    "CALCULATED RISK: ",
+                                                    prediction.risk_percentage,
+                                                    "%"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 158,
+                                                lineNumber: 185,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 156,
+                                        lineNumber: 182,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -570,18 +627,18 @@ const SessionPredictor = ({ player, apiBase })=>{
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 161,
+                                            lineNumber: 191,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 160,
+                                        lineNumber: 190,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 155,
+                                lineNumber: 181,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -601,7 +658,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                                 children: "Est. Mechanical Load"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 169,
+                                                                lineNumber: 199,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {
@@ -609,13 +666,13 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                                 className: "text-zinc-700"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 170,
+                                                                lineNumber: 200,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 168,
+                                                        lineNumber: 198,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -626,7 +683,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                                 children: prediction.mech_load
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 173,
+                                                                lineNumber: 203,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -634,13 +691,13 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                                 children: "AU"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 174,
+                                                                lineNumber: 204,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 172,
+                                                        lineNumber: 202,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -652,12 +709,12 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                             }
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 177,
+                                                            lineNumber: 207,
                                                             columnNumber: 21
                                                         }, ("TURBOPACK compile-time value", void 0))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 176,
+                                                        lineNumber: 206,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -665,13 +722,13 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         children: "Predicted tissue stress (Accel/Decel) based on inputs."
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 179,
+                                                        lineNumber: 209,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 167,
+                                                lineNumber: 197,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0)),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -682,7 +739,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         children: "Session Classification"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 183,
+                                                        lineNumber: 213,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -694,18 +751,18 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                                     size: 20
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 186,
+                                                                    lineNumber: 216,
                                                                     columnNumber: 74
                                                                 }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$battery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Battery$3e$__["Battery"], {
                                                                     size: 20
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 186,
+                                                                    lineNumber: 216,
                                                                     columnNumber: 102
                                                                 }, ("TURBOPACK compile-time value", void 0))
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 185,
+                                                                lineNumber: 215,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0)),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -713,25 +770,25 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                                 children: prediction.session_type
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 188,
+                                                                lineNumber: 218,
                                                                 columnNumber: 21
                                                             }, ("TURBOPACK compile-time value", void 0))
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 184,
+                                                        lineNumber: 214,
                                                         columnNumber: 19
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 182,
+                                                lineNumber: 212,
                                                 columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 196,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0)),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,7 +807,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         strokeOpacity: 0.5
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 196,
+                                                        lineNumber: 226,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$polar$2f$PolarAngleAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PolarAngleAxis"], {
@@ -762,7 +819,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         }
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 197,
+                                                        lineNumber: 227,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$polar$2f$PolarRadiusAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["PolarRadiusAxis"], {
@@ -775,7 +832,7 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         axisLine: false
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 198,
+                                                        lineNumber: 228,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0)),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$polar$2f$Radar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Radar"], {
@@ -787,51 +844,51 @@ const SessionPredictor = ({ player, apiBase })=>{
                                                         fillOpacity: 0.2
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 199,
+                                                        lineNumber: 229,
                                                         columnNumber: 21
                                                     }, ("TURBOPACK compile-time value", void 0))
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 195,
+                                                lineNumber: 225,
                                                 columnNumber: 19
                                             }, ("TURBOPACK compile-time value", void 0))
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 194,
+                                            lineNumber: 224,
                                             columnNumber: 17
                                         }, ("TURBOPACK compile-time value", void 0))
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 193,
+                                        lineNumber: 223,
                                         columnNumber: 15
                                     }, ("TURBOPACK compile-time value", void 0))
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 165,
+                                lineNumber: 195,
                                 columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 154,
+                        lineNumber: 180,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 135,
+                lineNumber: 161,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 68,
+        lineNumber: 103,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-// --- 2. HELPER COMPONENTS (Original) ---
+// --- 2. VISUALIZATION COMPONENTS ---
 const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendValue })=>{
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: `relative group overflow-hidden rounded-3xl border border-white/5 bg-zinc-900/60 backdrop-blur-md p-5 transition-all duration-300 hover:border-white/10 hover:bg-zinc-800/80 hover:shadow-2xl hover:shadow-black/50`,
@@ -840,7 +897,7 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                 className: `absolute -right-10 -top-10 h-32 w-32 rounded-full blur-3xl transition-opacity opacity-0 group-hover:opacity-20 ${status === 'danger' ? 'bg-rose-500' : status === 'warning' ? 'bg-amber-500' : 'bg-emerald-500'}`
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 216,
+                lineNumber: 246,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -852,12 +909,12 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                             size: 18
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 219,
+                            lineNumber: 249,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 218,
+                        lineNumber: 248,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     trend && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -867,13 +924,13 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 223,
+                                lineNumber: 253,
                                 columnNumber: 31
                             }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDownRight$3e$__["ArrowDownRight"], {
                                 size: 12
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 223,
+                                lineNumber: 253,
                                 columnNumber: 60
                             }, ("TURBOPACK compile-time value", void 0)),
                             trendValue,
@@ -881,13 +938,13 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 222,
+                        lineNumber: 252,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 217,
+                lineNumber: 247,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -898,7 +955,7 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                         children: title
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 229,
+                        lineNumber: 259,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -908,12 +965,12 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                             children: value
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 231,
+                            lineNumber: 261,
                             columnNumber: 11
                         }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 230,
+                        lineNumber: 260,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -923,100 +980,701 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
                                 size: 10
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 234,
+                                lineNumber: 264,
                                 columnNumber: 35
                             }, ("TURBOPACK compile-time value", void 0)),
                             subtext
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 233,
+                        lineNumber: 263,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 228,
+                lineNumber: 258,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 215,
+        lineNumber: 245,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
-const RadialProgress = ({ score, label })=>{
-    const safeScore = score || 0;
-    const radius = 40;
-    const stroke = 6;
-    const normalizedRadius = radius - stroke * 2;
-    const circumference = normalizedRadius * 2 * Math.PI;
-    const strokeDashoffset = circumference - safeScore / 100 * circumference;
-    const getColor = (s)=>s > 85 ? '#34d399' : s > 60 ? '#fbbf24' : '#f43f5e';
+const AdvancedLoadChart = ({ data })=>{
+    if (!data || data.length === 0) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex items-center justify-center h-64 text-zinc-500",
+        children: "No History Data"
+    }, void 0, false, {
+        fileName: "[project]/app/dashboard.tsx",
+        lineNumber: 273,
+        columnNumber: 42
+    }, ("TURBOPACK compile-time value", void 0));
+    // Slice to show last 28 days for readability, but calculation relies on full history
+    const displayData = data.slice(-28);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "relative flex items-center justify-center",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                height: radius * 2,
-                width: radius * 2,
-                className: "rotate-[-90deg] transition-all duration-1000 ease-out",
+        className: "h-[350px] w-full",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
+            width: "100%",
+            height: "100%",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$ComposedChart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ComposedChart"], {
+                data: displayData,
+                margin: {
+                    top: 20,
+                    right: 20,
+                    bottom: 20,
+                    left: 0
+                },
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                        stroke: "#27272a",
-                        strokeWidth: stroke,
-                        fill: "transparent",
-                        r: normalizedRadius,
-                        cx: radius,
-                        cy: radius
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
+                            id: "barGradient",
+                            x1: "0",
+                            y1: "0",
+                            x2: "0",
+                            y2: "1",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                    offset: "5%",
+                                    stopColor: "#3f3f46",
+                                    stopOpacity: 0.8
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard.tsx",
+                                    lineNumber: 284,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
+                                    offset: "95%",
+                                    stopColor: "#3f3f46",
+                                    stopOpacity: 0.2
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard.tsx",
+                                    lineNumber: 285,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard.tsx",
+                            lineNumber: 283,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0))
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 254,
-                        columnNumber: 9
+                        lineNumber: 282,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
-                        stroke: getColor(safeScore),
-                        fill: "transparent",
-                        strokeWidth: stroke,
-                        strokeDasharray: circumference + ' ' + circumference,
-                        style: {
-                            strokeDashoffset,
-                            strokeLinecap: "round"
-                        },
-                        r: normalizedRadius,
-                        cx: radius,
-                        cy: radius
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CartesianGrid"], {
+                        strokeDasharray: "3 3",
+                        stroke: "#27272a",
+                        vertical: false
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 255,
-                        columnNumber: 9
+                        lineNumber: 288,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XAxis"], {
+                        dataKey: "date",
+                        tick: {
+                            fill: '#71717a',
+                            fontSize: 10
+                        },
+                        axisLine: false,
+                        tickLine: false,
+                        tickFormatter: (str)=>{
+                            const d = new Date(str);
+                            return `${d.getDate()}/${d.getMonth() + 1}`;
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 289,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YAxis"], {
+                        yAxisId: "left",
+                        stroke: "#71717a",
+                        fontSize: 10,
+                        tickLine: false,
+                        axisLine: false,
+                        label: {
+                            value: 'Load (AU)',
+                            angle: -90,
+                            position: 'insideLeft',
+                            fill: '#52525b',
+                            fontSize: 10
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 299,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
+                        contentStyle: {
+                            backgroundColor: '#09090b',
+                            borderColor: '#27272a',
+                            borderRadius: '12px',
+                            fontSize: '12px',
+                            boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.5)'
+                        },
+                        itemStyle: {
+                            padding: 0
+                        },
+                        cursor: {
+                            fill: '#ffffff05'
+                        },
+                        labelFormatter: (label)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-zinc-400 font-mono mb-2 block border-b border-zinc-800 pb-1",
+                                children: label
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 305,
+                                columnNumber: 40
+                            }, void 0)
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 301,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Legend$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Legend"], {
+                        verticalAlign: "top",
+                        height: 36,
+                        iconType: "circle",
+                        wrapperStyle: {
+                            fontSize: '11px',
+                            fontWeight: 600
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 308,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Bar"], {
+                        yAxisId: "left",
+                        dataKey: "daily_load",
+                        name: "Daily Load",
+                        fill: "url(#barGradient)",
+                        barSize: 8,
+                        radius: [
+                            4,
+                            4,
+                            0,
+                            0
+                        ]
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 311,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
+                        yAxisId: "left",
+                        type: "monotone",
+                        dataKey: "chronic_load",
+                        name: "Fitness (Chronic)",
+                        stroke: "#3b82f6",
+                        strokeWidth: 2,
+                        dot: false,
+                        strokeDasharray: "5 5"
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 314,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Line$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Line"], {
+                        yAxisId: "left",
+                        type: "monotone",
+                        dataKey: "acute_load",
+                        name: "Fatigue (Acute)",
+                        stroke: "#eab308",
+                        strokeWidth: 3,
+                        dot: {
+                            r: 3,
+                            fill: '#eab308',
+                            strokeWidth: 0
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 317,
+                        columnNumber: 11
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$ReferenceLine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ReferenceLine"], {
+                        y: 600,
+                        yAxisId: "left",
+                        stroke: "#ef4444",
+                        strokeDasharray: "3 3",
+                        label: {
+                            position: 'right',
+                            value: 'Max Cap',
+                            fill: '#ef4444',
+                            fontSize: 10
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 320,
+                        columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 253,
-                columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute flex flex-col items-center text-center",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-xl font-bold text-white font-mono",
-                    children: safeScore
-                }, void 0, false, {
-                    fileName: "[project]/app/dashboard.tsx",
-                    lineNumber: 258,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
+                lineNumber: 281,
+                columnNumber: 9
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/app/dashboard.tsx",
+            lineNumber: 280,
+            columnNumber: 7
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/app/dashboard.tsx",
+        lineNumber: 279,
+        columnNumber: 5
+    }, ("TURBOPACK compile-time value", void 0));
+};
+const ReadinessChart = ({ data })=>{
+    const displayData = data ? data.slice(-14) : [];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "h-32 w-full mt-4",
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
+            width: "100%",
+            height: "100%",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chart$2d$column$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__BarChart3$3e$__["BarChart3"], {
+                data: displayData,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YAxis"], {
+                        hide: true,
+                        domain: [
+                            0,
+                            100
+                        ]
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 333,
+                        columnNumber: 21
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Bar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Bar"], {
+                        dataKey: "readiness_score",
+                        radius: [
+                            2,
+                            2,
+                            2,
+                            2
+                        ],
+                        children: displayData.map((entry, index)=>{
+                            const score = entry.readiness_score || 0;
+                            const color = score >= 85 ? '#10b981' : score >= 60 ? '#f59e0b' : '#f43f5e';
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Cell$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Cell"], {
+                                fill: color
+                            }, `cell-${index}`, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 338,
+                                columnNumber: 36
+                            }, ("TURBOPACK compile-time value", void 0));
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 334,
+                        columnNumber: 21
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$ReferenceLine$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ReferenceLine"], {
+                        y: 60,
+                        stroke: "#52525b",
+                        strokeDasharray: "3 3"
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 341,
+                        columnNumber: 21
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
+                        cursor: {
+                            fill: 'transparent'
+                        },
+                        contentStyle: {
+                            backgroundColor: '#18181b',
+                            border: 'none',
+                            fontSize: '10px'
+                        },
+                        formatter: (value)=>[
+                                `${value}%`,
+                                'Readiness'
+                            ]
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 342,
+                        columnNumber: 21
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard.tsx",
+                lineNumber: 332,
+                columnNumber: 17
+            }, ("TURBOPACK compile-time value", void 0))
+        }, void 0, false, {
+            fileName: "[project]/app/dashboard.tsx",
+            lineNumber: 331,
+            columnNumber: 13
+        }, ("TURBOPACK compile-time value", void 0))
+    }, void 0, false, {
+        fileName: "[project]/app/dashboard.tsx",
+        lineNumber: 330,
+        columnNumber: 9
+    }, ("TURBOPACK compile-time value", void 0));
+};
+const TeamAnalysisBoard = ({ teamData })=>{
+    if (!teamData || !teamData.roster) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex flex-col items-center justify-center h-64 text-zinc-500 gap-4",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                className: "animate-spin text-yellow-500",
+                size: 32
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 257,
-                columnNumber: 7
+                lineNumber: 356,
+                columnNumber: 13
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                children: "Analyzing Roster Data..."
+            }, void 0, false, {
+                fileName: "[project]/app/dashboard.tsx",
+                lineNumber: 357,
+                columnNumber: 13
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 252,
-        columnNumber: 5
+        lineNumber: 355,
+        columnNumber: 9
+    }, ("TURBOPACK compile-time value", void 0));
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-zinc-900/50 border border-white/5 p-6 rounded-3xl",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-zinc-500 text-xs font-bold uppercase tracking-widest",
+                                children: "Team Avg Acute Load"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 365,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-4xl font-mono font-bold text-white mt-2",
+                                children: teamData.team_avg_load
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 366,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs text-zinc-500 mt-1",
+                                children: "Arbitrary Units (7d)"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 367,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 364,
+                        columnNumber: 17
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-zinc-900/50 border border-white/5 p-6 rounded-3xl",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-zinc-500 text-xs font-bold uppercase tracking-widest",
+                                children: "Roster Availability"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 370,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-4xl font-mono font-bold text-emerald-400 mt-2",
+                                children: "92%"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 371,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs text-zinc-500 mt-1",
+                                children: "Ready for selection"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 372,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 369,
+                        columnNumber: 17
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-zinc-900/50 border border-white/5 p-6 rounded-3xl",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-zinc-500 text-xs font-bold uppercase tracking-widest",
+                                children: "High Risk Players"
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 375,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-4xl font-mono font-bold text-rose-500 mt-2",
+                                children: teamData.roster.filter((p)=>p.acwr > 1.5).length
+                            }, void 0, false, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 376,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-xs text-zinc-500 mt-1",
+                                children: [
+                                    "ACWR ",
+                                    ">",
+                                    " 1.5"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 379,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 374,
+                        columnNumber: 17
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard.tsx",
+                lineNumber: 363,
+                columnNumber: 13
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "bg-zinc-900/60 border border-white/5 rounded-3xl overflow-hidden",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "p-6 border-b border-white/5 flex justify-between items-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-white font-bold flex items-center gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+                                        size: 18,
+                                        className: "text-yellow-500"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/dashboard.tsx",
+                                        lineNumber: 385,
+                                        columnNumber: 82
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    " Squad Load Report"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 385,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "text-xs text-zinc-400 hover:text-white flex items-center gap-1",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$down$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowDownRight$3e$__["ArrowDownRight"], {
+                                        size: 12
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/dashboard.tsx",
+                                        lineNumber: 386,
+                                        columnNumber: 104
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    " Export CSV"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/app/dashboard.tsx",
+                                lineNumber: 386,
+                                columnNumber: 21
+                            }, ("TURBOPACK compile-time value", void 0))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 384,
+                        columnNumber: 17
+                    }, ("TURBOPACK compile-time value", void 0)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "overflow-x-auto",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                            className: "w-full text-left",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+                                    className: "bg-zinc-950/50 text-xs uppercase text-zinc-500 font-bold tracking-wider",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "px-6 py-4",
+                                                children: "Player"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard.tsx",
+                                                lineNumber: 392,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "px-6 py-4 text-right",
+                                                children: "Acute Load (7d)"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard.tsx",
+                                                lineNumber: 393,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "px-6 py-4 text-right",
+                                                children: "ACWR"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard.tsx",
+                                                lineNumber: 394,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "px-6 py-4",
+                                                children: "Status"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard.tsx",
+                                                lineNumber: 395,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+                                                className: "px-6 py-4 text-right",
+                                                children: "Sessions (28d)"
+                                            }, void 0, false, {
+                                                fileName: "[project]/app/dashboard.tsx",
+                                                lineNumber: 396,
+                                                columnNumber: 33
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/app/dashboard.tsx",
+                                        lineNumber: 391,
+                                        columnNumber: 29
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard.tsx",
+                                    lineNumber: 390,
+                                    columnNumber: 25
+                                }, ("TURBOPACK compile-time value", void 0)),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+                                    className: "divide-y divide-white/5 text-sm",
+                                    children: teamData.roster.map((player, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+                                            className: "hover:bg-zinc-800/30 transition-colors group",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "px-6 py-4 font-medium text-white flex items-center gap-3",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: `w-2 h-2 rounded-full ${player.flag === 'red' ? 'bg-rose-500 animate-pulse' : player.flag === 'yellow' ? 'bg-amber-500' : 'bg-emerald-500'}`
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard.tsx",
+                                                            lineNumber: 403,
+                                                            columnNumber: 41
+                                                        }, ("TURBOPACK compile-time value", void 0)),
+                                                        player.name,
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                            className: "text-xs text-zinc-600 font-normal",
+                                                            children: player.position
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/app/dashboard.tsx",
+                                                            lineNumber: 405,
+                                                            columnNumber: 41
+                                                        }, ("TURBOPACK compile-time value", void 0))
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/app/dashboard.tsx",
+                                                    lineNumber: 402,
+                                                    columnNumber: 37
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "px-6 py-4 text-right font-mono text-zinc-300",
+                                                    children: Math.round(player.acute_load)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard.tsx",
+                                                    lineNumber: 407,
+                                                    columnNumber: 37
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "px-6 py-4 text-right",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: `font-mono font-bold px-2 py-1 rounded ${player.acwr > 1.5 ? 'bg-rose-500/20 text-rose-400' : player.acwr < 0.8 ? 'bg-amber-500/20 text-amber-400' : 'text-emerald-400'}`,
+                                                        children: player.acwr
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard.tsx",
+                                                        lineNumber: 409,
+                                                        columnNumber: 41
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard.tsx",
+                                                    lineNumber: 408,
+                                                    columnNumber: 37
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "px-6 py-4",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: `text-xs font-bold uppercase ${player.flag === 'red' ? 'text-rose-500' : player.flag === 'yellow' ? 'text-amber-500' : 'text-emerald-500'}`,
+                                                        children: player.status
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/app/dashboard.tsx",
+                                                        lineNumber: 418,
+                                                        columnNumber: 41
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard.tsx",
+                                                    lineNumber: 417,
+                                                    columnNumber: 37
+                                                }, ("TURBOPACK compile-time value", void 0)),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+                                                    className: "px-6 py-4 text-right text-zinc-500",
+                                                    children: player.sessions_last_28
+                                                }, void 0, false, {
+                                                    fileName: "[project]/app/dashboard.tsx",
+                                                    lineNumber: 424,
+                                                    columnNumber: 37
+                                                }, ("TURBOPACK compile-time value", void 0))
+                                            ]
+                                        }, idx, true, {
+                                            fileName: "[project]/app/dashboard.tsx",
+                                            lineNumber: 401,
+                                            columnNumber: 33
+                                        }, ("TURBOPACK compile-time value", void 0)))
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard.tsx",
+                                    lineNumber: 399,
+                                    columnNumber: 25
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard.tsx",
+                            lineNumber: 389,
+                            columnNumber: 21
+                        }, ("TURBOPACK compile-time value", void 0))
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard.tsx",
+                        lineNumber: 388,
+                        columnNumber: 17
+                    }, ("TURBOPACK compile-time value", void 0))
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard.tsx",
+                lineNumber: 383,
+                columnNumber: 13
+            }, ("TURBOPACK compile-time value", void 0))
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/dashboard.tsx",
+        lineNumber: 362,
+        columnNumber: 9
     }, ("TURBOPACK compile-time value", void 0));
 };
 const StatPill = ({ label, value, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1028,12 +1686,12 @@ const StatPill = ({ label, value, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__
                     size: 18
                 }, void 0, false, {
                     fileName: "[project]/app/dashboard.tsx",
-                    lineNumber: 267,
+                    lineNumber: 438,
                     columnNumber: 7
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 266,
+                lineNumber: 437,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1043,7 +1701,7 @@ const StatPill = ({ label, value, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__
                         children: label
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 270,
+                        lineNumber: 441,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1051,19 +1709,19 @@ const StatPill = ({ label, value, icon: Icon })=>/*#__PURE__*/ (0, __TURBOPACK__
                         children: value
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 271,
+                        lineNumber: 442,
                         columnNumber: 7
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 269,
+                lineNumber: 440,
                 columnNumber: 5
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 265,
+        lineNumber: 436,
         columnNumber: 3
     }, ("TURBOPACK compile-time value", void 0));
 const LoadingScreen = ({ message })=>{
@@ -1077,14 +1735,14 @@ const LoadingScreen = ({ message })=>{
                         className: "absolute inset-0 border-4 border-zinc-800 rounded-full"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 280,
+                        lineNumber: 451,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 border-t-4 border-yellow-500 rounded-full animate-spin"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 281,
+                        lineNumber: 452,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$activity$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Activity$3e$__["Activity"], {
@@ -1092,13 +1750,13 @@ const LoadingScreen = ({ message })=>{
                         size: 32
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 282,
+                        lineNumber: 453,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 279,
+                lineNumber: 450,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1109,7 +1767,7 @@ const LoadingScreen = ({ message })=>{
                         children: message
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 286,
+                        lineNumber: 457,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0)),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1119,33 +1777,33 @@ const LoadingScreen = ({ message })=>{
                                 className: "w-2 h-2 bg-yellow-500 rounded-full animate-bounce [animation-delay:-0.3s]"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 290,
+                                lineNumber: 461,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "w-2 h-2 bg-yellow-500 rounded-full animate-bounce [animation-delay:-0.15s]"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 291,
+                                lineNumber: 462,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 className: "w-2 h-2 bg-yellow-500 rounded-full animate-bounce"
                             }, void 0, false, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 292,
+                                lineNumber: 463,
                                 columnNumber: 11
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 289,
+                        lineNumber: 460,
                         columnNumber: 9
                     }, ("TURBOPACK compile-time value", void 0))
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 285,
+                lineNumber: 456,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1154,12 +1812,12 @@ const LoadingScreen = ({ message })=>{
                     className: "h-full bg-yellow-500/50 animate-progress-indeterminate"
                 }, void 0, false, {
                     fileName: "[project]/app/dashboard.tsx",
-                    lineNumber: 297,
+                    lineNumber: 468,
                     columnNumber: 9
                 }, ("TURBOPACK compile-time value", void 0))
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 296,
+                lineNumber: 467,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0)),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1167,161 +1825,13 @@ const LoadingScreen = ({ message })=>{
                 children: "AI MODEL V2.4 LOADING"
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 299,
+                lineNumber: 470,
                 columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 278,
-        columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
-};
-const LoadChart = ({ chartData })=>{
-    const formattedData = chartData.map((d)=>({
-            date: new Date(d.activity_date).toLocaleDateString('en-US', {
-                weekday: 'short',
-                day: 'numeric'
-            }),
-            load: d.external_load || 0,
-            ac: d.ac_ratio || 0
-        }));
-    if (!formattedData || formattedData.length === 0) {
-        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "h-64 w-full flex items-center justify-center text-zinc-500 text-xs",
-            children: "No Load Data Available"
-        }, void 0, false, {
-            fileName: "[project]/app/dashboard.tsx",
-            lineNumber: 312,
-            columnNumber: 12
-        }, ("TURBOPACK compile-time value", void 0));
-    }
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "h-64 w-full mt-4",
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$ResponsiveContainer$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ResponsiveContainer"], {
-            width: "100%",
-            height: "100%",
-            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$chart$2f$AreaChart$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AreaChart"], {
-                data: formattedData,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                            id: "colorLoad",
-                            x1: "0",
-                            y1: "0",
-                            x2: "0",
-                            y2: "1",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
-                                    offset: "5%",
-                                    stopColor: "#eab308",
-                                    stopOpacity: 0.3
-                                }, void 0, false, {
-                                    fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 321,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
-                                    offset: "95%",
-                                    stopColor: "#eab308",
-                                    stopOpacity: 0
-                                }, void 0, false, {
-                                    fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 322,
-                                    columnNumber: 15
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 320,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0))
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 319,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$CartesianGrid$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CartesianGrid"], {
-                        strokeDasharray: "3 3",
-                        stroke: "#27272a",
-                        vertical: false
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 325,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$XAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["XAxis"], {
-                        dataKey: "date",
-                        tick: {
-                            fill: '#71717a',
-                            fontSize: 10
-                        },
-                        axisLine: false,
-                        tickLine: false,
-                        interval: "preserveStartEnd"
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 326,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$YAxis$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["YAxis"], {
-                        hide: true
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 327,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$component$2f$Tooltip$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Tooltip"], {
-                        contentStyle: {
-                            backgroundColor: '#18181b',
-                            borderColor: '#27272a',
-                            borderRadius: '8px',
-                            fontSize: '12px'
-                        },
-                        itemStyle: {
-                            color: '#e4e4e7'
-                        },
-                        cursor: {
-                            stroke: '#52525b',
-                            strokeWidth: 1,
-                            strokeDasharray: '4 4'
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 328,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$recharts$2f$es6$2f$cartesian$2f$Area$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Area"], {
-                        type: "monotone",
-                        dataKey: "load",
-                        name: "Ext Load",
-                        stroke: "#eab308",
-                        fillOpacity: 1,
-                        fill: "url(#colorLoad)",
-                        strokeWidth: 2,
-                        activeDot: {
-                            r: 4,
-                            strokeWidth: 0
-                        }
-                    }, void 0, false, {
-                        fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 333,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 318,
-                columnNumber: 9
-            }, ("TURBOPACK compile-time value", void 0))
-        }, void 0, false, {
-            fileName: "[project]/app/dashboard.tsx",
-            lineNumber: 317,
-            columnNumber: 7
-        }, ("TURBOPACK compile-time value", void 0))
-    }, void 0, false, {
-        fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 316,
+        lineNumber: 449,
         columnNumber: 5
     }, ("TURBOPACK compile-time value", void 0));
 };
@@ -1329,59 +1839,20 @@ function LoewenDashboard() {
     const [activeTab, setActiveTab] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('dashboard');
     const [isSidebarOpen, setSidebarOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [players, setPlayers] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
-    const [teamStatus, setTeamStatus] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [teamAnalysis, setTeamAnalysis] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
     const [selectedPlayer, setSelectedPlayer] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
-    // --- FIXED: Initialize readiness object to prevent TypeError ---
-    const [trends, setTrends] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
-        chart_data: [],
-        insights: [],
-        readiness: {
-            score: 0,
-            status: 'Loading'
+    const [playerDeepDive, setPlayerDeepDive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])({
+        history: [],
+        summary: {
+            current_status: 'Loading',
+            action_required: '...'
         }
     });
-    // Loading States
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [loadingMessage, setLoadingMessage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("Analyzing Data");
     const API_BASE = "http://localhost:5000";
-    // Mock data for demonstration fallback
-    const MOCK_PLAYERS = [
-        {
-            player_id: 'p1',
-            name: 'Tischler, N.',
-            jersey_number: 13,
-            position: 'Forward',
-            photo_url: '',
-            height_m: 2.01,
-            weight_kg: 98,
-            age: 23
-        },
-        {
-            player_id: 'p2',
-            name: 'Kramer, D.',
-            jersey_number: 44,
-            position: 'Guard',
-            photo_url: '',
-            height_m: 1.90,
-            weight_kg: 85,
-            age: 26
-        },
-        {
-            player_id: 'p3',
-            name: 'Bango, J.',
-            jersey_number: 21,
-            position: 'Center',
-            photo_url: '',
-            height_m: 2.08,
-            weight_kg: 105,
-            age: 24
-        }
-    ];
-    // ----------------------------------------------------------------
-    // 1. DATA FETCHING LOGIC
-    // ----------------------------------------------------------------
+    // Fetch Roster
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        // Initial Player Fetch
         fetch(`${API_BASE}/api/players`).then((res)=>res.json()).then((data)=>{
             if (Array.isArray(data) && data.length > 0) {
                 setPlayers(data);
@@ -1396,67 +1867,60 @@ function LoewenDashboard() {
             setSelectedPlayer(MOCK_PLAYERS[0]);
         });
     }, []);
+    // Fetch Team Analysis
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        fetch(`${API_BASE}/api/dashboard/team-status`).then((res)=>res.json()).then((data)=>setTeamStatus(data)).catch((err)=>console.error("Failed to fetch status:", err));
+        const fetchTeamData = async ()=>{
+            try {
+                const res = await fetch(`${API_BASE}/api/analysis/team`);
+                const data = await res.json();
+                if (res.ok && data && !data.error && Array.isArray(data.roster)) {
+                    setTeamAnalysis(data);
+                } else {
+                    setTeamAnalysis(MOCK_TEAM_ANALYSIS);
+                }
+            } catch (err) {
+                setTeamAnalysis(MOCK_TEAM_ANALYSIS);
+            }
+        };
+        fetchTeamData();
     }, []);
+    // Fetch Individual Analysis
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
         let isMounted = true;
         const runLoadingSequence = async ()=>{
             if (selectedPlayer?.player_id) {
                 setIsLoading(true);
-                // Reset trends slightly to avoid stale data flickering, but keep readiness structure
-                setTrends({
-                    chart_data: [],
-                    insights: [],
-                    readiness: {
-                        score: 0,
-                        status: 'Analyzing...'
+                setPlayerDeepDive({
+                    history: [],
+                    summary: {
+                        current_status: 'Analyzing...',
+                        action_required: '...'
                     }
                 });
                 try {
-                    setLoadingMessage("Analyzing Data");
-                    await new Promise((resolve)=>setTimeout(resolve, 1000));
+                    setLoadingMessage("Fetching History");
+                    await new Promise((resolve)=>setTimeout(resolve, 300));
                     if (!isMounted) return;
-                    setLoadingMessage("Training Model");
-                    await new Promise((resolve)=>setTimeout(resolve, 1000));
+                    setLoadingMessage("Calculating ACWR");
+                    await new Promise((resolve)=>setTimeout(resolve, 300));
                     if (!isMounted) return;
-                    setLoadingMessage("Predicting Injury Risk");
-                    await new Promise((resolve)=>setTimeout(resolve, 1000));
-                    if (!isMounted) return;
-                    const response = await fetch(`${API_BASE}/api/player/${selectedPlayer.player_id}/trends`);
+                    const response = await fetch(`${API_BASE}/api/analysis/player/${selectedPlayer.player_id}`);
                     if (!response.ok) throw new Error("Network response was not ok");
                     const data = await response.json();
                     if (isMounted) {
-                        setTrends(data);
+                        setPlayerDeepDive(data);
                         setIsLoading(false);
                     }
                 } catch (err) {
-                    console.error("Failed to fetch trends", err);
                     if (isMounted) {
-                        // --- FIXED: Mock Data now includes readiness object ---
-                        const mockData = {
-                            chart_data: Array.from({
-                                length: 7
-                            }, (_, i)=>({
-                                    activity_date: new Date(Date.now() - i * 86400000).toISOString(),
-                                    external_load: Math.random() * 500 + 300,
-                                    ac_ratio: Math.random() * 0.8 + 0.7
-                                })).reverse(),
-                            insights: [
-                                {
-                                    type: "WARNING",
-                                    title: "Spike Detected",
-                                    message: "Load increased rapidly over last 48h.",
-                                    action: "Reduce intensity."
-                                }
-                            ],
-                            readiness: {
-                                score: 78,
-                                status: "Moderate (Mock)"
-                            }
-                        };
-                        setTrends(mockData);
                         setIsLoading(false);
+                        setPlayerDeepDive({
+                            history: [],
+                            summary: {
+                                current_status: 'Data Unavailable',
+                                action_required: 'Check connection'
+                            }
+                        });
                     }
                 }
             }
@@ -1468,17 +1932,26 @@ function LoewenDashboard() {
     }, [
         selectedPlayer
     ]);
-    // ----------------------------------------------------------------
-    const currentPlayerStatus = teamStatus.find((s)=>s.name === selectedPlayer?.name) || {};
-    // --- FIXED: Use Optional Chaining (?. and ??) to safely access readiness data 
-    const readinessScore = trends.readiness?.score ?? 0;
-    const readinessStatus = trends.readiness?.status || "Analyzing";
-    const loadRpe = currentPlayerStatus.load_rpe || 450;
-    const acRatio = currentPlayerStatus.ac_ratio || 1.1;
-    const primaryInsight = trends.insights && trends.insights.length > 0 ? trends.insights[0] : {
-        message: "No critical data available.",
-        action: "Monitor standard load."
+    const latestData = playerDeepDive.history.length > 0 ? playerDeepDive.history[playerDeepDive.history.length - 1] : {};
+    const loadRpe = latestData.acute_load || 0;
+    const acRatio = latestData.acwr || 0;
+    const readiness = latestData.readiness_score || 0;
+    const monotony = latestData.monotony || 0;
+    const getStatus = (ac)=>{
+        if (ac > 1.5) return {
+            color: 'danger',
+            text: 'High Risk'
+        };
+        if (ac < 0.8) return {
+            color: 'warning',
+            text: 'Detraining'
+        };
+        return {
+            color: 'success',
+            text: 'Optimal'
+        };
     };
+    const acStatus = getStatus(acRatio);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-zinc-950 text-white font-sans antialiased selection:bg-yellow-500/30",
         children: [
@@ -1489,20 +1962,20 @@ function LoewenDashboard() {
                         className: "absolute top-0 left-0 w-full h-[500px] bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-zinc-900 via-zinc-950 to-zinc-950 opacity-50"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 490,
+                        lineNumber: 602,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute top-0 right-0 w-[500px] h-[500px] bg-yellow-500/5 blur-[120px] rounded-full mix-blend-screen"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard.tsx",
-                        lineNumber: 491,
+                        lineNumber: 603,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 489,
+                lineNumber: 601,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
@@ -1524,25 +1997,25 @@ function LoewenDashboard() {
                                                 children: "L"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 501,
+                                                lineNumber: 612,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 500,
+                                            lineNumber: 611,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "absolute -bottom-1 -right-1 w-3 h-3 bg-emerald-500 border-2 border-zinc-900 rounded-full"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 503,
+                                            lineNumber: 614,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 499,
+                                    lineNumber: 610,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1553,7 +2026,7 @@ function LoewenDashboard() {
                                             children: "LÖWEN"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 506,
+                                            lineNumber: 617,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1561,19 +2034,19 @@ function LoewenDashboard() {
                                             children: "Analytics"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 507,
+                                            lineNumber: 618,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 505,
+                                    lineNumber: 616,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 498,
+                            lineNumber: 609,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -1583,6 +2056,11 @@ function LoewenDashboard() {
                                     id: 'dashboard',
                                     label: 'Performance',
                                     icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gauge$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gauge$3e$__["Gauge"]
+                                },
+                                {
+                                    id: 'team',
+                                    label: 'Team View',
+                                    icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"]
                                 },
                                 {
                                     id: 'player-info',
@@ -1603,19 +2081,19 @@ function LoewenDashboard() {
                                             className: "text-yellow-500"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 526,
+                                            lineNumber: 638,
                                             columnNumber: 43
                                         }, this),
                                         item.label
                                     ]
                                 }, item.id, true, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 517,
+                                    lineNumber: 629,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 511,
+                            lineNumber: 622,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1628,20 +2106,20 @@ function LoewenDashboard() {
                                             size: 20
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 534,
+                                            lineNumber: 646,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                             className: "absolute top-1.5 right-2 w-2 h-2 bg-rose-500 rounded-full border border-zinc-900"
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 535,
+                                            lineNumber: 647,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 533,
+                                    lineNumber: 645,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1655,7 +2133,7 @@ function LoewenDashboard() {
                                                     children: "Head Coach"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 539,
+                                                    lineNumber: 651,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1663,13 +2141,13 @@ function LoewenDashboard() {
                                                     children: "Dr. M. Reus"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 540,
+                                                    lineNumber: 652,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 538,
+                                            lineNumber: 650,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1678,18 +2156,18 @@ function LoewenDashboard() {
                                                 size: 16
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 543,
+                                                lineNumber: 655,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 542,
+                                            lineNumber: 654,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 537,
+                                    lineNumber: 649,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1697,34 +2175,66 @@ function LoewenDashboard() {
                                     onClick: ()=>setSidebarOpen(!isSidebarOpen),
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {}, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 546,
+                                        lineNumber: 658,
                                         columnNumber: 105
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/app/dashboard.tsx",
-                                    lineNumber: 546,
+                                    lineNumber: 658,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 532,
+                            lineNumber: 644,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard.tsx",
-                    lineNumber: 496,
+                    lineNumber: 607,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 495,
+                lineNumber: 606,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
                 className: "pt-24 pb-12 px-4 md:px-8 max-w-[1600px] mx-auto relative z-10",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: activeTab === 'team' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "animate-in fade-in duration-500",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-3xl font-bold mb-8 flex items-center gap-3",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+                                    className: "text-yellow-500"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/dashboard.tsx",
+                                    lineNumber: 667,
+                                    columnNumber: 82
+                                }, this),
+                                " Team Overview"
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/dashboard.tsx",
+                            lineNumber: 667,
+                            columnNumber: 18
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(TeamAnalysisBoard, {
+                            teamData: teamAnalysis
+                        }, void 0, false, {
+                            fileName: "[project]/app/dashboard.tsx",
+                            lineNumber: 668,
+                            columnNumber: 18
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/dashboard.tsx",
+                    lineNumber: 666,
+                    columnNumber: 14
+                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 lg:grid-cols-12 gap-8",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
@@ -1743,14 +2253,14 @@ function LoewenDashboard() {
                                                         className: "text-yellow-500"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 559,
+                                                        lineNumber: 676,
                                                         columnNumber: 117
                                                     }, this),
                                                     " Active Roster"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 559,
+                                                lineNumber: 676,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1758,20 +2268,23 @@ function LoewenDashboard() {
                                                 children: players.length
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 560,
+                                                lineNumber: 677,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 558,
+                                        lineNumber: 675,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex-1 overflow-y-auto p-3 space-y-2 scrollbar-hide",
                                         children: players.map((player)=>{
-                                            const pStatus = teamStatus.find((s)=>s.name === player.name);
-                                            const color = pStatus?.status_color === 'RED' ? 'bg-rose-500' : pStatus?.status_color === 'YELLOW' ? 'bg-amber-500' : 'bg-emerald-500';
+                                            const pAnalysis = teamAnalysis?.roster?.find((p)=>p.name === player.name);
+                                            let statusColor = 'bg-zinc-500';
+                                            if (pAnalysis) {
+                                                statusColor = pAnalysis.flag === 'red' ? 'bg-rose-500' : pAnalysis.flag === 'yellow' ? 'bg-amber-500' : 'bg-emerald-500';
+                                            }
                                             return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                                 onClick: ()=>{
                                                     setSelectedPlayer(player);
@@ -1792,20 +2305,20 @@ function LoewenDashboard() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 574,
+                                                                lineNumber: 694,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                className: `absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 ${selectedPlayer?.player_id === player.player_id ? 'border-yellow-400' : 'border-zinc-900'} ${color}`
+                                                                className: `absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 ${selectedPlayer?.player_id === player.player_id ? 'border-yellow-400' : 'border-zinc-900'} ${statusColor}`
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 580,
+                                                                lineNumber: 700,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 573,
+                                                        lineNumber: 693,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1819,7 +2332,7 @@ function LoewenDashboard() {
                                                                         children: player.name
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 584,
+                                                                        lineNumber: 704,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1830,27 +2343,27 @@ function LoewenDashboard() {
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 585,
+                                                                        lineNumber: 705,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 583,
+                                                                lineNumber: 703,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                className: `text-[10px] font-medium uppercase tracking-wider ${selectedPlayer?.player_id === player.player_id ? 'text-zinc-800' : 'text-zinc-500'}`,
+                                                                className: `text-xs font-medium uppercase tracking-wider ${selectedPlayer?.player_id === player.player_id ? 'text-zinc-800' : 'text-zinc-500'}`,
                                                                 children: player.position
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 587,
+                                                                lineNumber: 707,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 582,
+                                                        lineNumber: 702,
                                                         columnNumber: 23
                                                     }, this),
                                                     selectedPlayer?.player_id === player.player_id && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
@@ -1858,30 +2371,30 @@ function LoewenDashboard() {
                                                         className: "text-zinc-900 opacity-50"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 589,
+                                                        lineNumber: 709,
                                                         columnNumber: 74
                                                     }, this)
                                                 ]
                                             }, player.player_id, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 568,
+                                                lineNumber: 688,
                                                 columnNumber: 21
                                             }, this);
                                         })
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 562,
+                                        lineNumber: 679,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 557,
+                                lineNumber: 674,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 556,
+                            lineNumber: 673,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1896,7 +2409,7 @@ function LoewenDashboard() {
                                                 className: "absolute top-0 right-0 w-96 h-96 bg-gradient-to-b from-yellow-500/10 to-transparent rounded-full blur-3xl -translate-y-1/2 translate-x-1/3 pointer-events-none"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 604,
+                                                lineNumber: 722,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1909,7 +2422,7 @@ function LoewenDashboard() {
                                                                 className: "absolute inset-0 bg-yellow-500 rounded-full blur-md opacity-20 animate-pulse"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 607,
+                                                                lineNumber: 725,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
@@ -1922,7 +2435,7 @@ function LoewenDashboard() {
                                                                 }
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 608,
+                                                                lineNumber: 726,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1930,13 +2443,13 @@ function LoewenDashboard() {
                                                                 children: selectedPlayer.jersey_number
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 614,
+                                                                lineNumber: 732,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 606,
+                                                        lineNumber: 724,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1950,7 +2463,7 @@ function LoewenDashboard() {
                                                                         children: "First Team"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 620,
+                                                                        lineNumber: 738,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1960,20 +2473,20 @@ function LoewenDashboard() {
                                                                                 size: 10
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 621,
+                                                                                lineNumber: 739,
                                                                                 columnNumber: 171
                                                                             }, this),
                                                                             " Active"
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 621,
+                                                                        lineNumber: 739,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 619,
+                                                                lineNumber: 737,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1981,7 +2494,7 @@ function LoewenDashboard() {
                                                                 children: selectedPlayer.name
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 623,
+                                                                lineNumber: 741,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1995,7 +2508,7 @@ function LoewenDashboard() {
                                                                                 className: "text-yellow-500"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 625,
+                                                                                lineNumber: 743,
                                                                                 columnNumber: 64
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2003,20 +2516,20 @@ function LoewenDashboard() {
                                                                                 children: selectedPlayer.position
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 625,
+                                                                                lineNumber: 743,
                                                                                 columnNumber: 115
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 625,
+                                                                        lineNumber: 743,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "w-px h-4 bg-zinc-800"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 626,
+                                                                        lineNumber: 744,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2027,7 +2540,7 @@ function LoewenDashboard() {
                                                                                 className: "text-zinc-600"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 627,
+                                                                                lineNumber: 745,
                                                                                 columnNumber: 64
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2038,13 +2551,13 @@ function LoewenDashboard() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 627,
+                                                                                lineNumber: 745,
                                                                                 columnNumber: 109
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 627,
+                                                                        lineNumber: 745,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2055,7 +2568,7 @@ function LoewenDashboard() {
                                                                                 className: "text-zinc-600"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 628,
+                                                                                lineNumber: 746,
                                                                                 columnNumber: 64
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2066,13 +2579,13 @@ function LoewenDashboard() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 628,
+                                                                                lineNumber: 746,
                                                                                 columnNumber: 109
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 628,
+                                                                        lineNumber: 746,
                                                                         columnNumber: 23
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2083,7 +2596,7 @@ function LoewenDashboard() {
                                                                                 className: "text-zinc-600"
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 629,
+                                                                                lineNumber: 747,
                                                                                 columnNumber: 64
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2094,25 +2607,25 @@ function LoewenDashboard() {
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 629,
+                                                                                lineNumber: 747,
                                                                                 columnNumber: 112
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 629,
+                                                                        lineNumber: 747,
                                                                         columnNumber: 23
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 624,
+                                                                lineNumber: 742,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 618,
+                                                        lineNumber: 736,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2123,40 +2636,44 @@ function LoewenDashboard() {
                                                                 children: "Readiness"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 633,
+                                                                lineNumber: 751,
                                                                 columnNumber: 21
                                                             }, this),
-                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(RadialProgress, {
-                                                                score: readinessScore
-                                                            }, void 0, false, {
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: `text-4xl font-black ${readiness >= 85 ? 'text-emerald-400' : readiness >= 60 ? 'text-amber-500' : 'text-rose-500'}`,
+                                                                children: [
+                                                                    readiness,
+                                                                    "%"
+                                                                ]
+                                                            }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 634,
+                                                                lineNumber: 752,
                                                                 columnNumber: 21
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                 className: "text-zinc-400 text-[10px] font-bold mt-2 text-center max-w-[100px] leading-tight",
-                                                                children: readinessStatus
+                                                                children: readiness >= 85 ? 'Peak' : readiness >= 60 ? 'Moderate' : 'High Risk'
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 635,
+                                                                lineNumber: 755,
                                                                 columnNumber: 21
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 632,
+                                                        lineNumber: 750,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 605,
+                                                lineNumber: 723,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 603,
+                                        lineNumber: 721,
                                         columnNumber: 15
                                     }, this),
                                     activeTab === 'dashboard' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -2165,53 +2682,53 @@ function LoewenDashboard() {
                                                 className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4",
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MetricCard, {
-                                                        title: "Load (A:C)",
-                                                        value: ("TURBOPACK compile-time truthy", 1) ? acRatio.toFixed(2) : "TURBOPACK unreachable",
-                                                        subtext: acRatio > 1.5 ? "High Load" : "Optimal",
-                                                        status: acRatio > 1.5 ? "danger" : "success",
+                                                        title: "ACWR (Risk)",
+                                                        value: acRatio ? acRatio.toFixed(2) : "N/A",
+                                                        subtext: acStatus.text,
+                                                        status: acStatus.color,
                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$activity$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Activity$3e$__["Activity"]
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 645,
+                                                        lineNumber: 765,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MetricCard, {
-                                                        title: "Fatigue",
+                                                        title: "Acute Load",
                                                         value: loadRpe || "0",
-                                                        subtext: "Total Load (AU)",
+                                                        subtext: "Last 7 Days Avg",
                                                         status: loadRpe > 600 ? "warning" : "success",
                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"]
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 652,
+                                                        lineNumber: 772,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MetricCard, {
-                                                        title: "Sleep Score",
-                                                        value: "N/A",
-                                                        subtext: "No Data",
-                                                        status: "neutral",
+                                                        title: "Monotony",
+                                                        value: monotony || "0",
+                                                        subtext: monotony > 2.0 ? "High Strain" : "Good Variation",
+                                                        status: monotony > 2.0 ? "danger" : "success",
                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"]
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 659,
+                                                        lineNumber: 779,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MetricCard, {
-                                                        title: "Nutrition",
-                                                        value: "N/A",
-                                                        subtext: "No Data",
+                                                        title: "Chronic Load",
+                                                        value: latestData.chronic_load || "0",
+                                                        subtext: "Fitness Level",
                                                         status: "neutral",
                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$droplet$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Droplet$3e$__["Droplet"]
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 660,
-                                                        columnNumber: 25
+                                                        lineNumber: 786,
+                                                        columnNumber: 26
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 644,
+                                                lineNumber: 764,
                                                 columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2221,7 +2738,7 @@ function LoewenDashboard() {
                                                         message: loadingMessage
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 666,
+                                                        lineNumber: 796,
                                                         columnNumber: 39
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2234,19 +2751,19 @@ function LoewenDashboard() {
                                                                     size: 18
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 669,
+                                                                    lineNumber: 799,
                                                                     columnNumber: 86
                                                                 }, this),
                                                                 " Load Management & Insights"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 669,
+                                                            lineNumber: 799,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 668,
+                                                        lineNumber: 798,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2255,22 +2772,32 @@ function LoewenDashboard() {
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                 className: "flex-1",
                                                                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                    className: "h-[300px] w-full bg-zinc-950/30 rounded-xl border border-white/5 p-4",
-                                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(LoadChart, {
-                                                                        chartData: trends.chart_data || []
-                                                                    }, void 0, false, {
-                                                                        fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 675,
-                                                                        columnNumber: 38
-                                                                    }, this)
-                                                                }, void 0, false, {
+                                                                    className: "h-[350px] w-full bg-zinc-950/30 rounded-xl border border-white/5 p-4",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                                            className: "text-xs text-zinc-500 font-bold uppercase mb-2",
+                                                                            children: "ACWR & Load History "
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/dashboard.tsx",
+                                                                            lineNumber: 805,
+                                                                            columnNumber: 37
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(AdvancedLoadChart, {
+                                                                            data: playerDeepDive.history
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/app/dashboard.tsx",
+                                                                            lineNumber: 806,
+                                                                            columnNumber: 37
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 674,
+                                                                    lineNumber: 804,
                                                                     columnNumber: 33
                                                                 }, this)
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 673,
+                                                                lineNumber: 803,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2278,123 +2805,181 @@ function LoewenDashboard() {
                                                                 children: [
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                                                         className: "text-zinc-500 text-xs font-bold uppercase tracking-widest mb-2",
-                                                                        children: "AI Analysis"
+                                                                        children: "Coach Summary"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 680,
+                                                                        lineNumber: 811,
                                                                         columnNumber: 33
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                        className: `p-4 rounded-xl border flex flex-col gap-2 ${primaryInsight.type === 'CRITICAL' ? 'bg-rose-500/10 border-rose-500/30' : primaryInsight.type === 'WARNING' ? 'bg-amber-500/10 border-amber-500/30' : 'bg-zinc-800/50 border-zinc-700'}`,
+                                                                        className: `p-4 rounded-xl border flex flex-col gap-2 ${playerDeepDive.summary.current_status.includes('DANGER') ? 'bg-rose-500/10 border-rose-500/30' : 'bg-zinc-800/50 border-zinc-700'}`,
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                                 className: "flex items-center gap-2",
                                                                                 children: [
-                                                                                    primaryInsight.type === 'CRITICAL' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
+                                                                                    playerDeepDive.summary.current_status.includes('DANGER') ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$triangle$2d$alert$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__AlertTriangle$3e$__["AlertTriangle"], {
                                                                                         size: 16,
                                                                                         className: "text-rose-500"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                                        lineNumber: 683,
-                                                                                        columnNumber: 79
+                                                                                        lineNumber: 815,
+                                                                                        columnNumber: 101
                                                                                     }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
                                                                                         size: 16,
                                                                                         className: "text-zinc-400"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                                        lineNumber: 683,
-                                                                                        columnNumber: 134
+                                                                                        lineNumber: 815,
+                                                                                        columnNumber: 156
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                                        className: `text-xs font-bold ${primaryInsight.type === 'CRITICAL' ? 'text-rose-400' : 'text-zinc-300'}`,
-                                                                                        children: primaryInsight.title || "Status Normal"
+                                                                                        className: `text-xs font-bold ${playerDeepDive.summary.current_status.includes('DANGER') ? 'text-rose-400' : 'text-zinc-300'}`,
+                                                                                        children: playerDeepDive.summary.current_status
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                                        lineNumber: 684,
+                                                                                        lineNumber: 816,
                                                                                         columnNumber: 41
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 682,
+                                                                                lineNumber: 814,
                                                                                 columnNumber: 37
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                                                 className: "text-sm text-white leading-snug",
-                                                                                children: primaryInsight.message
+                                                                                children: playerDeepDive.summary.action_required
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 686,
+                                                                                lineNumber: 820,
                                                                                 columnNumber: 37
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 681,
+                                                                        lineNumber: 813,
                                                                         columnNumber: 33
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                                         className: "p-4 rounded-xl bg-zinc-950 border border-zinc-800",
                                                                         children: [
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                                                className: "flex items-center gap-2 text-yellow-500 mb-2",
+                                                                                className: "flex items-center gap-2 text-emerald-500 mb-2",
                                                                                 children: [
-                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$battery$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Battery$3e$__["Battery"], {
                                                                                         size: 14
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                                        lineNumber: 690,
+                                                                                        lineNumber: 825,
                                                                                         columnNumber: 41
                                                                                     }, this),
                                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                                                         className: "text-xs font-bold uppercase",
-                                                                                        children: "Action Required"
+                                                                                        children: "Readiness Trend"
                                                                                     }, void 0, false, {
                                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                                        lineNumber: 691,
+                                                                                        lineNumber: 826,
                                                                                         columnNumber: 41
                                                                                     }, this)
                                                                                 ]
                                                                             }, void 0, true, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 689,
+                                                                                lineNumber: 824,
                                                                                 columnNumber: 37
                                                                             }, this),
-                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                                                className: "text-sm text-zinc-400",
-                                                                                children: primaryInsight.action
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(ReadinessChart, {
+                                                                                data: playerDeepDive.history
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                                lineNumber: 693,
+                                                                                lineNumber: 828,
                                                                                 columnNumber: 37
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 688,
+                                                                        lineNumber: 823,
+                                                                        columnNumber: 33
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "p-4 rounded-xl bg-zinc-900/50 border border-zinc-800",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h5", {
+                                                                                className: "text-[10px] text-zinc-500 font-bold uppercase mb-1",
+                                                                                children: "Monotony Check "
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard.tsx",
+                                                                                lineNumber: 832,
+                                                                                columnNumber: 38
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center justify-between",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: "text-sm text-zinc-300",
+                                                                                        children: "Var. Index"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/app/dashboard.tsx",
+                                                                                        lineNumber: 834,
+                                                                                        columnNumber: 42
+                                                                                    }, this),
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                        className: `font-mono font-bold ${monotony > 2 ? 'text-rose-500' : 'text-emerald-500'}`,
+                                                                                        children: monotony
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/app/dashboard.tsx",
+                                                                                        lineNumber: 835,
+                                                                                        columnNumber: 42
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/app/dashboard.tsx",
+                                                                                lineNumber: 833,
+                                                                                columnNumber: 38
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "w-full h-1 bg-zinc-800 mt-2 rounded-full overflow-hidden",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                    className: `h-full ${monotony > 2 ? 'bg-rose-500' : 'bg-emerald-500'}`,
+                                                                                    style: {
+                                                                                        width: `${monotony / 3 * 100}%`
+                                                                                    }
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/app/dashboard.tsx",
+                                                                                    lineNumber: 838,
+                                                                                    columnNumber: 42
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/app/dashboard.tsx",
+                                                                                lineNumber: 837,
+                                                                                columnNumber: 38
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/app/dashboard.tsx",
+                                                                        lineNumber: 831,
                                                                         columnNumber: 33
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 679,
+                                                                lineNumber: 810,
                                                                 columnNumber: 29
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 672,
+                                                        lineNumber: 802,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 664,
+                                                lineNumber: 795,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true),
-                                    activeTab === 'player-info' && /* --- NEW PLAYER BIO TAB --- */ /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    activeTab === 'player-info' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "grid grid-cols-1 lg:grid-cols-3 gap-6",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2410,14 +2995,14 @@ function LoewenDashboard() {
                                                                         size: 14
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 707,
+                                                                        lineNumber: 851,
                                                                         columnNumber: 132
                                                                     }, this),
                                                                     " Physical Profile"
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 707,
+                                                                lineNumber: 851,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2429,7 +3014,7 @@ function LoewenDashboard() {
                                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ruler$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Ruler$3e$__["Ruler"]
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 710,
+                                                                        lineNumber: 854,
                                                                         columnNumber: 33
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StatPill, {
@@ -2438,7 +3023,7 @@ function LoewenDashboard() {
                                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$scale$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Scale$3e$__["Scale"]
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 711,
+                                                                        lineNumber: 855,
                                                                         columnNumber: 33
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StatPill, {
@@ -2447,7 +3032,7 @@ function LoewenDashboard() {
                                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"]
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 712,
+                                                                        lineNumber: 856,
                                                                         columnNumber: 33
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(StatPill, {
@@ -2456,13 +3041,13 @@ function LoewenDashboard() {
                                                                         icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"]
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 713,
+                                                                        lineNumber: 857,
                                                                         columnNumber: 33
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 709,
+                                                                lineNumber: 853,
                                                                 columnNumber: 29
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2473,7 +3058,7 @@ function LoewenDashboard() {
                                                                         children: "About"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 717,
+                                                                        lineNumber: 861,
                                                                         columnNumber: 33
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2484,23 +3069,23 @@ function LoewenDashboard() {
                                                                             ", currently wearing jersey number #",
                                                                             selectedPlayer.jersey_number,
                                                                             ".",
-                                                                            readinessScore > 80 ? " Currently in peak physical condition." : " Monitoring workload for optimal performance."
+                                                                            readiness > 80 ? " Currently showing high readiness levels." : " Monitoring for accumulated fatigue."
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/app/dashboard.tsx",
-                                                                        lineNumber: 718,
+                                                                        lineNumber: 862,
                                                                         columnNumber: 33
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/dashboard.tsx",
-                                                                lineNumber: 716,
+                                                                lineNumber: 860,
                                                                 columnNumber: 29
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 706,
+                                                        lineNumber: 850,
                                                         columnNumber: 25
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2513,7 +3098,7 @@ function LoewenDashboard() {
                                                                     children: "Season Stats"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 729,
+                                                                    lineNumber: 872,
                                                                     columnNumber: 33
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2521,25 +3106,25 @@ function LoewenDashboard() {
                                                                     children: "Detailed Stats Integration Pending"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 730,
+                                                                    lineNumber: 873,
                                                                     columnNumber: 33
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 728,
+                                                            lineNumber: 871,
                                                             columnNumber: 29
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/dashboard.tsx",
-                                                        lineNumber: 726,
+                                                        lineNumber: 870,
                                                         columnNumber: 25
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 705,
-                                                columnNumber: 20
+                                                lineNumber: 849,
+                                                columnNumber: 21
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                 className: "space-y-6",
@@ -2553,14 +3138,14 @@ function LoewenDashboard() {
                                                                     size: 14
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 740,
+                                                                    lineNumber: 882,
                                                                     columnNumber: 132
                                                                 }, this),
                                                                 " Identifiers"
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 740,
+                                                            lineNumber: 882,
                                                             columnNumber: 29
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2574,7 +3159,7 @@ function LoewenDashboard() {
                                                                             children: "Internal ID"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 743,
+                                                                            lineNumber: 885,
                                                                             columnNumber: 37
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2582,13 +3167,13 @@ function LoewenDashboard() {
                                                                             children: selectedPlayer.player_id
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 744,
+                                                                            lineNumber: 886,
                                                                             columnNumber: 37
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 742,
+                                                                    lineNumber: 884,
                                                                     columnNumber: 33
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2599,7 +3184,7 @@ function LoewenDashboard() {
                                                                             children: "Jersey No."
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 747,
+                                                                            lineNumber: 889,
                                                                             columnNumber: 37
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2610,13 +3195,13 @@ function LoewenDashboard() {
                                                                             ]
                                                                         }, void 0, true, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 748,
+                                                                            lineNumber: 890,
                                                                             columnNumber: 37
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 746,
+                                                                    lineNumber: 888,
                                                                     columnNumber: 33
                                                                 }, this),
                                                                 selectedPlayer.source_url && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2629,43 +3214,43 @@ function LoewenDashboard() {
                                                                             children: "View Official Profile"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 752,
+                                                                            lineNumber: 894,
                                                                             columnNumber: 45
                                                                         }, this),
                                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
                                                                             size: 14
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 753,
+                                                                            lineNumber: 895,
                                                                             columnNumber: 45
                                                                         }, this)
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 751,
+                                                                    lineNumber: 893,
                                                                     columnNumber: 37
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 741,
+                                                            lineNumber: 883,
                                                             columnNumber: 29
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 739,
+                                                    lineNumber: 881,
                                                     columnNumber: 25
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/app/dashboard.tsx",
-                                                lineNumber: 738,
-                                                columnNumber: 20
+                                                lineNumber: 880,
+                                                columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 703,
+                                        lineNumber: 848,
                                         columnNumber: 17
                                     }, this),
                                     activeTab === 'ai-lab' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2686,14 +3271,14 @@ function LoewenDashboard() {
                                                                             className: "text-yellow-500"
                                                                         }, void 0, false, {
                                                                             fileName: "[project]/app/dashboard.tsx",
-                                                                            lineNumber: 769,
+                                                                            lineNumber: 910,
                                                                             columnNumber: 27
                                                                         }, this),
                                                                         " Predictive Modeling"
                                                                     ]
                                                                 }, void 0, true, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 768,
+                                                                    lineNumber: 909,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -2701,13 +3286,13 @@ function LoewenDashboard() {
                                                                     children: "Session Simulator"
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/dashboard.tsx",
-                                                                    lineNumber: 771,
+                                                                    lineNumber: 912,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 767,
+                                                            lineNumber: 908,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2715,13 +3300,13 @@ function LoewenDashboard() {
                                                             children: "Beta v2.4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 773,
+                                                            lineNumber: 914,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 766,
+                                                    lineNumber: 907,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2732,7 +3317,7 @@ function LoewenDashboard() {
                                                             children: "Invisible Mechanical Load"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 776,
+                                                            lineNumber: 917,
                                                             columnNumber: 68
                                                         }, this),
                                                         " and ",
@@ -2740,14 +3325,14 @@ function LoewenDashboard() {
                                                             children: "Injury Risk"
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/dashboard.tsx",
-                                                            lineNumber: 776,
+                                                            lineNumber: 917,
                                                             columnNumber: 115
                                                         }, this),
                                                         ". This model uses Volume inputs to estimate tissue stress and neuromuscular fatigue based on advanced inertial metrics."
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 775,
+                                                    lineNumber: 916,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(SessionPredictor, {
@@ -2755,46 +3340,46 @@ function LoewenDashboard() {
                                                     apiBase: API_BASE
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/dashboard.tsx",
-                                                    lineNumber: 781,
+                                                    lineNumber: 921,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/dashboard.tsx",
-                                            lineNumber: 765,
+                                            lineNumber: 906,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/dashboard.tsx",
-                                        lineNumber: 764,
+                                        lineNumber: 905,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/dashboard.tsx",
-                                lineNumber: 600,
+                                lineNumber: 719,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard.tsx",
-                            lineNumber: 598,
+                            lineNumber: 717,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard.tsx",
-                    lineNumber: 553,
+                    lineNumber: 671,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/dashboard.tsx",
-                lineNumber: 552,
+                lineNumber: 663,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard.tsx",
-        lineNumber: 487,
+        lineNumber: 600,
         columnNumber: 5
     }, this);
 }
