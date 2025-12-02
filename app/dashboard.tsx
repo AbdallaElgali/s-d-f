@@ -1,19 +1,84 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ReactNode } from 'react';
 import { 
   Activity, User, ChevronRight, TrendingUp, 
   Zap, Moon, Droplet, AlertTriangle, 
   Scale, Shield, Briefcase, Menu, 
   ArrowUpRight, ArrowDownRight, Target, Bell,
   FileText, Ruler, Hash, Calendar, ExternalLink, Gauge, Loader2,
-  Brain, Sliders, Battery, AlertOctagon, Info, Users, BarChart3
+  Brain, Sliders, Battery, AlertOctagon, Info, Users, BarChart
 } from 'lucide-react';
 import { 
   ResponsiveContainer, AreaChart, Area, Tooltip, XAxis, YAxis, CartesianGrid,
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
-  ComposedChart, Line, Bar, Legend, ReferenceLine, Cell
+  ComposedChart, Line, Bar, Legend, ReferenceLine, Cell, BarChart as RechartBarChart
 } from 'recharts';
+
+// --- TYPE DEFINITIONS ---
+interface Player {
+  player_id: number;
+  name: string;
+  jersey_number: number;
+  position: string;
+  photo_url: string;
+  height_m: number;
+  weight_kg: number;
+  age: number;
+  source_url?: string;
+}
+
+interface HistoryEntry {
+  date: string;
+  daily_load: number;
+  chronic_load: number;
+  acute_load: number;
+  acwr: number;
+  readiness_score: number;
+  monotony: number;
+}
+
+interface PlayerAnalysis {
+  history: HistoryEntry[];
+  summary: {
+    current_status: string;
+    action_required: string;
+  };
+}
+
+interface RosterPlayer {
+  name: string;
+  position: string;
+  acute_load: number;
+  acwr: number;
+  status: string;
+  flag: 'red' | 'yellow' | 'green';
+  sessions_last_28: number;
+}
+
+interface TeamAnalysis {
+  team_avg_load: number;
+  roster: RosterPlayer[];
+}
+
+interface PredictionResult {
+  risk_percentage: number;
+  risk_label: 'High' | 'Moderate' | 'Low';
+  risk_color: string;
+  mech_load: number;
+  session_type: string;
+  radar_data: Array<{
+    subject: string;
+    A: number;
+    B: number;
+  }>;
+}
+
+interface RadarDataPoint {
+  subject: string;
+  A: number;
+  B: number;
+}
 
 // --- MOCK DATA DEFINITIONS (FALLBACKS) ---
 const MOCK_PLAYERS = [
@@ -22,7 +87,7 @@ const MOCK_PLAYERS = [
     { player_id: 3, name: 'Bango, J.', jersey_number: 21, position: 'Center', photo_url: '', height_m: 2.08, weight_kg: 105, age: 24 }
 ];
 
-const MOCK_TEAM_ANALYSIS = {
+const MOCK_TEAM_ANALYSIS: TeamAnalysis = {
     team_avg_load: 412,
     roster: [
       { name: 'Tischler, N.', position: 'Forward', acute_load: 580, acwr: 1.6, status: 'High Risk (Spike)', flag: 'red', sessions_last_28: 22 },
@@ -33,22 +98,27 @@ const MOCK_TEAM_ANALYSIS = {
     ]
 };
 
-// --- 1. NEW COMPONENT: AI SESSION PREDICTOR (UPDATED FOR WEIGHTED RISK) ---
+// --- 1. NEW COMPONENT: AI SESSION PREDICTOR ---
 
-const SessionPredictor = ({ player, apiBase }) => {
+interface SessionPredictorProps {
+  player: Player | null;
+  apiBase: string;
+}
+
+const SessionPredictor: React.FC<SessionPredictorProps> = ({ player, apiBase }) => {
   const [inputs, setInputs] = useState({
     duration: 90, // minutes
     rpe: 7,       // 1-10
     distance: 4000 // meters (visual only)
   });
    
-  const [hoverRpe, setHoverRpe] = useState(null);
+  const [hoverRpe, setHoverRpe] = useState<number | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
-  const [prediction, setPrediction] = useState(null);
-  const [error, setError] = useState(null);
+  const [prediction, setPrediction] = useState<PredictionResult | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   // Helper for RPE Colors
-  const getRpeColor = (level) => {
+  const getRpeColor = (level: number): string => {
     if (level >= 8) return 'bg-rose-500 shadow-[0_0_10px_rgba(244,63,94,0.5)]';
     if (level >= 5) return 'bg-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]';
     return 'bg-emerald-500 shadow-[0_0_10px_rgba(16,185,129,0.5)]';
@@ -82,7 +152,7 @@ const SessionPredictor = ({ player, apiBase }) => {
       // Use Mock prediction if API fails
       setTimeout(() => {
           setPrediction({
-              risk_percentage: 65.4, // Mock Percentage
+              risk_percentage: 65.4, 
               risk_label: "Moderate", 
               risk_color: "text-amber-500", 
               mech_load: 650.5, 
@@ -148,6 +218,7 @@ const SessionPredictor = ({ player, apiBase }) => {
             </div>
           </div>
 
+          
 
           <button onClick={handlePredict} disabled={isCalculating} className="w-full py-4 bg-white hover:bg-zinc-200 text-zinc-900 font-bold rounded-xl transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_0_20px_rgba(255,255,255,0.1)]">
             {isCalculating ? <Loader2 className="animate-spin" /> : <Brain size={18} />}
@@ -240,7 +311,17 @@ const SessionPredictor = ({ player, apiBase }) => {
 
 // --- 2. VISUALIZATION COMPONENTS ---
 
-const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendValue }) => {
+interface MetricCardProps {
+  title: string;
+  value: string | number;
+  subtext: string;
+  status?: 'danger' | 'warning' | 'success' | 'neutral';
+  icon: React.ComponentType<{ size?: number }>;
+  trend?: 'up' | 'down' | 'neutral';
+  trendValue?: string | number;
+}
+
+const MetricCard: React.FC<MetricCardProps> = ({ title, value, subtext, status, icon: Icon, trend, trendValue }) => {
   return (
     <div className={`relative group overflow-hidden rounded-3xl border border-white/5 bg-zinc-900/60 backdrop-blur-md p-5 transition-all duration-300 hover:border-white/10 hover:bg-zinc-800/80 hover:shadow-2xl hover:shadow-black/50`}>
       <div className={`absolute -right-10 -top-10 h-32 w-32 rounded-full blur-3xl transition-opacity opacity-0 group-hover:opacity-20 ${status === 'danger' ? 'bg-rose-500' : status === 'warning' ? 'bg-amber-500' : 'bg-emerald-500'}`}></div>
@@ -269,11 +350,59 @@ const MetricCard = ({ title, value, subtext, status, icon: Icon, trend, trendVal
   );
 };
 
-const AdvancedLoadChart = ({ data }) => {
+interface MiniMetricChartProps {
+  title: string;
+  data?: HistoryEntry[];
+  dataKey: keyof HistoryEntry;
+  color?: string;
+  threshold?: number;
+}
+
+const MiniMetricChart: React.FC<MiniMetricChartProps> = ({ title, data, dataKey, color = "#3b82f6", threshold }) => {
+    const displayData = data ? data.slice(-14) : [];
+    const latestVal = displayData.length > 0 ? displayData[displayData.length - 1][dataKey] : 0;
+
+    return (
+        <div className="bg-zinc-950/50 border border-white/5 p-4 rounded-2xl hover:border-white/10 transition-colors">
+            <div className="flex justify-between items-center mb-3">
+                <span className="text-[10px] font-bold text-zinc-500 uppercase tracking-widest">{title}</span>
+                <span className={`text-sm font-mono font-bold ${threshold && typeof latestVal === 'number' && latestVal > threshold ? 'text-rose-500' : 'text-white'}`}>
+                    {typeof latestVal === 'number' ? latestVal.toFixed(1) : latestVal}
+                </span>
+            </div>
+            <div className="h-20 w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                    <RechartBarChart data={displayData}>
+                        <Bar dataKey={dataKey} radius={[2, 2, 2, 2]}>
+                            {displayData.map((entry, index) => {
+                                const value = entry[dataKey];
+                                const fillColor = threshold && typeof value === 'number' && value > threshold ? '#f43f5e' : color;
+                                return <Cell key={`cell-${index}`} fill={fillColor} />;
+                            })}
+                        </Bar>
+                        <Tooltip 
+                            cursor={{fill: 'rgba(255,255,255,0.05)'}}
+                            contentStyle={{backgroundColor: '#09090b', border: '1px solid #27272a', borderRadius: '8px', fontSize: '10px'}}
+                            itemStyle={{color: '#fff'}}
+                            formatter={(value) => [value, title]}
+                            labelStyle={{display: 'none'}}
+                        />
+                    </RechartBarChart>
+                </ResponsiveContainer>
+            </div>
+        </div>
+    );
+};
+
+interface AdvancedLoadChartProps {
+  data?: HistoryEntry[];
+}
+
+const AdvancedLoadChart: React.FC<AdvancedLoadChartProps> = ({ data }) => {
   if (!data || data.length === 0) return <div className="flex items-center justify-center h-64 text-zinc-500">No History Data</div>;
 
   // Slice to show last 28 days for readability, but calculation relies on full history
-  const displayData = data.slice(-28); 
+  const displayData = data.slice(-28);
 
   return (
     <div className="h-[350px] w-full">
@@ -324,12 +453,16 @@ const AdvancedLoadChart = ({ data }) => {
   );
 };
 
-const ReadinessChart = ({ data }) => {
+interface ReadinessChartProps {
+  data?: HistoryEntry[];
+}
+
+const ReadinessChart: React.FC<ReadinessChartProps> = ({ data }) => {
     const displayData = data ? data.slice(-14) : [];
     return (
         <div className="h-32 w-full mt-4">
             <ResponsiveContainer width="100%" height="100%">
-                <BarChart3 data={displayData}>
+                <RechartBarChart data={displayData}>
                     <YAxis hide domain={[0, 100]} />
                     <Bar dataKey="readiness_score" radius={[2, 2, 2, 2]}>
                         {displayData.map((entry, index) => {
@@ -344,13 +477,17 @@ const ReadinessChart = ({ data }) => {
                         contentStyle={{backgroundColor: '#18181b', border: 'none', fontSize: '10px'}}
                         formatter={(value) => [`${value}%`, 'Readiness']} 
                     />
-                </BarChart3>
+                </RechartBarChart>
             </ResponsiveContainer>
         </div>
     )
 }
 
-const TeamAnalysisBoard = ({ teamData }) => {
+interface TeamAnalysisBoardProps {
+  teamData?: TeamAnalysis | null;
+}
+
+const TeamAnalysisBoard: React.FC<TeamAnalysisBoardProps> = ({ teamData }) => {
     if(!teamData || !teamData.roster) return (
         <div className="flex flex-col items-center justify-center h-64 text-zinc-500 gap-4">
             <Loader2 className="animate-spin text-yellow-500" size={32}/>
@@ -374,7 +511,7 @@ const TeamAnalysisBoard = ({ teamData }) => {
                 <div className="bg-zinc-900/50 border border-white/5 p-6 rounded-3xl">
                     <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest">High Risk Players</h4>
                     <p className="text-4xl font-mono font-bold text-rose-500 mt-2">
-                        {teamData.roster.filter(p => p.acwr > 1.5).length}
+                        {teamData.roster.filter((p: RosterPlayer) => p.acwr > 1.5).length}
                     </p>
                     <p className="text-xs text-zinc-500 mt-1">ACWR {">"} 1.5</p>
                 </div>
@@ -397,7 +534,7 @@ const TeamAnalysisBoard = ({ teamData }) => {
                             </tr>
                         </thead>
                         <tbody className="divide-y divide-white/5 text-sm">
-                            {teamData.roster.map((player, idx) => (
+                            {teamData.roster.map((player: RosterPlayer, idx: number) => (
                                 <tr key={idx} className="hover:bg-zinc-800/30 transition-colors group">
                                     <td className="px-6 py-4 font-medium text-white flex items-center gap-3">
                                         <div className={`w-2 h-2 rounded-full ${player.flag === 'red' ? 'bg-rose-500 animate-pulse' : player.flag === 'yellow' ? 'bg-amber-500' : 'bg-emerald-500'}`}></div>
@@ -432,7 +569,13 @@ const TeamAnalysisBoard = ({ teamData }) => {
     );
 };
 
-const StatPill = ({ label, value, icon: Icon }) => (
+interface StatPillProps {
+  label: string;
+  value: string | number;
+  icon: React.ComponentType<{ size?: number }>;
+}
+
+const StatPill: React.FC<StatPillProps> = ({ label, value, icon: Icon }) => (
   <div className="flex items-center gap-3 bg-zinc-950/50 border border-white/5 p-3 rounded-2xl">
     <div className="w-10 h-10 rounded-xl bg-zinc-900 flex items-center justify-center text-yellow-500">
       <Icon size={18} />
@@ -444,7 +587,11 @@ const StatPill = ({ label, value, icon: Icon }) => (
   </div>
 );
 
-const LoadingScreen = ({ message }) => {
+interface LoadingScreenProps {
+  message: string;
+}
+
+const LoadingScreen: React.FC<LoadingScreenProps> = ({ message }) => {
   return (
     <div className="absolute inset-0 z-20 bg-zinc-950/80 backdrop-blur-xl flex flex-col items-center justify-center rounded-3xl border border-white/5">
       <div className="relative w-24 h-24 flex items-center justify-center mb-8">
@@ -475,14 +622,14 @@ const LoadingScreen = ({ message }) => {
 // --- 3. MAIN DASHBOARD COMPONENT ---
 
 export default function LoewenDashboard() {
-  const [activeTab, setActiveTab] = useState('dashboard'); 
+  const [activeTab, setActiveTab] = useState<'dashboard' | 'team' | 'player-info' | 'ai-lab'>('dashboard'); 
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const [players, setPlayers] = useState([]);
+  const [players, setPlayers] = useState<Player[]>([]);
   
-  const [teamAnalysis, setTeamAnalysis] = useState(null);
-  const [selectedPlayer, setSelectedPlayer] = useState(null);
+  const [teamAnalysis, setTeamAnalysis] = useState<TeamAnalysis | null>(null);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
   
-  const [playerDeepDive, setPlayerDeepDive] = useState({ 
+  const [playerDeepDive, setPlayerDeepDive] = useState<PlayerAnalysis>({ 
     history: [], 
     summary: { current_status: 'Loading', action_required: '...' } 
   });
@@ -496,7 +643,7 @@ export default function LoewenDashboard() {
   useEffect(() => {
     fetch(`${API_BASE}/api/players`)
       .then(res => res.json())
-      .then(data => {
+      .then((data: Player[]) => {
         if (Array.isArray(data) && data.length > 0) {
           setPlayers(data);
           setSelectedPlayer(data[0]);
@@ -517,9 +664,9 @@ export default function LoewenDashboard() {
     const fetchTeamData = async () => {
         try {
             const res = await fetch(`${API_BASE}/api/analysis/team`);
-            const data = await res.json();
+            const data: TeamAnalysis = await res.json();
             
-            if (res.ok && data && !data.error && Array.isArray(data.roster)) {
+            if (res.ok && data && !('error' in data) && Array.isArray(data.roster)) {
                 setTeamAnalysis(data);
             } else {
                 setTeamAnalysis(MOCK_TEAM_ANALYSIS);
@@ -555,7 +702,7 @@ export default function LoewenDashboard() {
           
           if (!response.ok) throw new Error("Network response was not ok");
           
-          const data = await response.json();
+          const data: PlayerAnalysis = await response.json();
 
           if (isMounted) {
             setPlayerDeepDive(data);
@@ -581,14 +728,19 @@ export default function LoewenDashboard() {
     };
   }, [selectedPlayer]);
 
-  const latestData = playerDeepDive.history.length > 0 ? playerDeepDive.history[playerDeepDive.history.length - 1] : {};
+  const latestData = playerDeepDive.history.length > 0 ? playerDeepDive.history[playerDeepDive.history.length - 1] : ({} as HistoryEntry);
   const loadRpe = latestData.acute_load || 0;
   const acRatio = latestData.acwr || 0;
   
   const readiness = latestData.readiness_score || 0;
   const monotony = latestData.monotony || 0;
   
-  const getStatus = (ac) => {
+  interface StatusResult {
+    color: 'danger' | 'warning' | 'success';
+    text: string;
+  }
+
+  const getStatus = (ac: number): StatusResult => {
       if (ac > 1.5) return { color: 'danger', text: 'High Risk' };
       if (ac < 0.8) return { color: 'warning', text: 'Detraining' };
       return { color: 'success', text: 'Optimal' };
@@ -621,10 +773,10 @@ export default function LoewenDashboard() {
 
           <nav className="hidden md:flex items-center bg-zinc-900/50 rounded-full p-1 border border-white/5">
             {[
-              { id: 'dashboard', label: 'Performance', icon: Gauge },
-              { id: 'team', label: 'Team View', icon: Users },
-              { id: 'player-info', label: 'Player Bio', icon: User },
-              { id: 'ai-lab', label: 'AI Lab', icon: Brain },
+              { id: 'dashboard' as const, label: 'Performance', icon: Gauge },
+              { id: 'team' as const, label: 'Team View', icon: Users },
+              { id: 'player-info' as const, label: 'Player Bio', icon: User },
+              { id: 'ai-lab' as const, label: 'AI Lab', icon: Brain },
             ].map((item) => (
               <button
                 key={item.id}
@@ -649,7 +801,7 @@ export default function LoewenDashboard() {
             <div className="hidden sm:flex items-center gap-3 pl-4 border-l border-white/10 cursor-pointer group">
               <div className="text-right">
                 <p className="text-xs text-zinc-500 font-medium group-hover:text-yellow-500 transition-colors">Head Coach</p>
-                <p className="text-sm font-bold text-white">Dr. M. Reus</p>
+                <p className="text-sm font-bold text-white">Dr. Abdalla Elgali</p>
               </div>
               <div className={`w-9 h-9 rounded-full border border-white/10 flex items-center justify-center bg-zinc-800 text-yellow-500`}>
                 <User size={16} />
@@ -695,7 +847,11 @@ export default function LoewenDashboard() {
                             src={player.photo_url || "https://placehold.co/100x100/3F3F46/D4D4D8?text=?"} 
                             alt={player.name} 
                             className={`w-10 h-10 rounded-xl object-cover bg-zinc-800 ${selectedPlayer?.player_id === player.player_id ? 'ring-2 ring-zinc-900/20' : 'grayscale group-hover:grayscale-0 transition-all'}`} 
-                            onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/100x100/3F3F46/D4D4D8?text=?" }}
+                            onError={(e) => { 
+                              const target = e.target as HTMLImageElement;
+                              target.onerror = null;
+                              target.src = "https://placehold.co/100x100/3F3F46/D4D4D8?text=?";
+                            }}
                         />
                         <div className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 ${selectedPlayer?.player_id === player.player_id ? 'border-yellow-400' : 'border-zinc-900'} ${statusColor}`}></div>
                       </div>
@@ -727,7 +883,11 @@ export default function LoewenDashboard() {
                         src={selectedPlayer.photo_url} 
                         alt="avatar" 
                         className="w-32 h-32 rounded-full object-cover border-[6px] border-zinc-800 shadow-2xl bg-zinc-800" 
-                        onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/100x100/3F3F46/D4D4D8?text=NO+IMAGE" }} 
+                        onError={(e) => { 
+                          const target = e.target as HTMLImageElement;
+                          target.onerror = null;
+                          target.src = "https://placehold.co/100x100/3F3F46/D4D4D8?text=NO+IMAGE";
+                        }} 
                     />
                     <div className="absolute -bottom-3 -right-3 bg-zinc-900 text-yellow-500 border border-zinc-800 rounded-full w-12 h-12 flex items-center justify-center font-black text-xl shadow-lg z-20">
                         {selectedPlayer.jersey_number}
@@ -839,6 +999,14 @@ export default function LoewenDashboard() {
                                      </div>
                                 </div>
                             </div>
+                        </div>
+
+                        {/* NEW ROW OF CHARTS INSIDE THE LOAD MANAGEMENT CARD */}
+                        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-6 pt-6 border-t border-white/5 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                            <MiniMetricChart title="Acute Load" data={playerDeepDive.history} dataKey="acute_load" color="#eab308" />
+                            <MiniMetricChart title="Chronic Load" data={playerDeepDive.history} dataKey="chronic_load" color="#3b82f6" />
+                            <MiniMetricChart title="ACWR Trend" data={playerDeepDive.history} dataKey="acwr" color="#10b981" threshold={1.5} />
+                            <MiniMetricChart title="Monotony" data={playerDeepDive.history} dataKey="monotony" color="#8b5cf6" threshold={2.0} />
                         </div>
                     </div>
                 </>
